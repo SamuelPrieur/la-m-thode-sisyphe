@@ -76,10 +76,10 @@ func _on_task_timeout():
 	shake_screen(3, 0.8)
 	error_counter +=1
 	task_failed.emit(current_task["id"])
-	if error_counter >= 3:
-		change_scene_on_failure()
-	else:
+	if error_counter < 3:
 		start_random_task() 
+	else:
+		return
 		
 func change_scene_on_failure():
 	get_tree().change_scene_to_file("res://Scenes/Lose.tscn")
@@ -207,7 +207,7 @@ func _on_slider_drag_ended(value_changed: bool, task: Dictionary):
 	if value_changed: # Si la valeur a changé pendant le drag
 		var node = get_node(task["button_node"])
 		var value = node.value # On récupère la valeur actuelle du slider
-		if current_task and current_task["id"] == task["id"] and value == current_task["target_value"]:
+		if current_task and current_task["button_node"] == task["button_node"] and value == current_task["target_value"]:
 			complete_current_task()
 			
 
@@ -236,10 +236,7 @@ func _on_order_minigame_completed(success: bool):
 	else:
 		error_counter += 1
 		task_failed.emit(current_task["id"])
-		if error_counter >= 3:
-			change_scene_on_failure()
-		else:
-			start_random_task()
+		start_random_task()
 
 
 func _on_radio_mini_game_completed(success: bool, task):

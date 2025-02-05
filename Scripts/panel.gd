@@ -13,9 +13,11 @@ extends Node2D
 @onready var animation_player = $CafeAnimation
 @onready var animated_sprite = $CafeAnimation/Cafe
 @onready var random_anim_timer = Timer.new()
+@onready var explosion = $Explosion
 
 var audio_player_validate
 var audio_player_error
+var audio_player_lose
 var error_audio1
 var error_audio2
 var blink_time = 0.0
@@ -23,7 +25,20 @@ var blink_speed = 2.0
 var blink_intensity = 0.6 
 var animation_played = false
 
+var audio_files = [
+	"res://Assets/Audio/Event/DeathCrash1.wav",
+	"res://Assets/Audio/Event/DeathCrash3.wav"
+]
+
 func _ready():
+	audio_player_lose = AudioStreamPlayer.new()
+	add_child(audio_player_lose)
+
+	# Sélectionne un fichier aléatoire
+	var random_audio = audio_files[randi() % audio_files.size()]
+	audio_player_lose.stream = load(random_audio)
+	audio_player_lose.volume_db = -15
+	
 	croix1.modulate.a = 0
 	croix2.modulate.a = 0
 	croix3.modulate.a = 0
@@ -95,7 +110,6 @@ func _on_task_completed(task_id: String):
 	
 func _on_task_failed(task_id: String):
 	audio_player_error.stream = error_audio1 if randi() % 2 == 0 else error_audio2
-	audio_player_error.play()
 	
 	
 	var task_manager = $TaskManager
@@ -106,12 +120,20 @@ func _on_task_failed(task_id: String):
 	
 	if error_count >= 1:
 		croix1.modulate.a = 1
+		audio_player_error.play()
 	if error_count >= 2:
 		croix2.modulate.a = 1
+		audio_player_error.play()
 	if error_count >= 3:
 		croix3.modulate.a = 1
+		audio_player_lose.play()
+		explosion.play("Explosion") 
+		explosion.animation_finished.connect(_on_explosion_animation_finished)
 
 func _on_timer_finished():
+	animate_fade_out()
+
+func _on_explosion_animation_finished():
 	animate_fade_out()
 
 func animate_fade_in():
@@ -131,4 +153,7 @@ func animate_fade_out():
 
 func change_level():
 	Global.level += 1
-	get_tree().change_scene_to_file("res://Scenes/LevelTransition.tscn")
+	var task_manager = $TaskManager
+	var error_count = task_manager.get_failed_tasks_count()
+	if error_count >= 3:
+		get_tree().change_scene_to_file("res://Scenes/Lose.tscn")
