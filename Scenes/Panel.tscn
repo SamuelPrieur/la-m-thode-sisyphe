@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://Scripts/task_manager.gd" id="2_g4bsj"]
 [ext_resource type="PackedScene" uid="uid://cq6qcb2l5duda" path="res://Scenes/Minigame/VerticalSlider.tscn" id="4_1w408"]
 [ext_resource type="FontFile" uid="uid://rjmbgq66tgvi" path="res://Assets/Font/OTBulbClassic-200.otf" id="6_8yd1w"]
-[ext_resource type="PackedScene" uid="uid://b2sp4q3o28mfs" path="res://Assets/TV/TV.tscn" id="6_hjq2f"]
+[ext_resource type="PackedScene" uid="uid://b2sp4q3o28mfs" path="res://Scenes/TV.tscn" id="6_hjq2f"]
 [ext_resource type="PackedScene" uid="uid://17cf7ihimd4o" path="res://Scenes/Minigame/Order.tscn" id="8_swf1g"]
 [ext_resource type="PackedScene" uid="uid://bjqhoi2yq7ui" path="res://Scenes/ErrorCounter.tscn" id="9_i3tvs"]
 [ext_resource type="PackedScene" uid="uid://doo45nhquufam" path="res://Scenes/Minigame/Radio.tscn" id="10_ldide"]
@@ -559,19 +559,19 @@ skew = -0.174533
 position = Vector2(1304, 133)
 scale = Vector2(0.45, 0.45)
 
-[node name="CubePlacemement" parent="TaskManager" instance=ExtResource("39_ngimo")]
+[node name="CubePlacement" parent="TaskManager" instance=ExtResource("39_ngimo")]
 position = Vector2(1275, 543)
 scale = Vector2(0.32, 0.32)
 
-[node name="Keypad" parent="TaskManager" instance=ExtResource("38_udp48")]
+[node name="KeyPad" parent="TaskManager" instance=ExtResource("38_udp48")]
 position = Vector2(285, 545)
 scale = Vector2(0.27, 0.27)
 
 [node name="ScoreLabel" type="Label" parent="."]
-offset_left = 712.0
-offset_top = 367.0
-offset_right = 784.0
-offset_bottom = 412.0
+offset_left = 680.0
+offset_top = 360.0
+offset_right = 752.0
+offset_bottom = 405.0
 label_settings = SubResource("LabelSettings_082bn")
 horizontal_alignment = 2
 vertical_alignment = 1

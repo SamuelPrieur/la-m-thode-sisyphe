@@ -17,13 +17,11 @@ func _on_new_task_started(description: String):
 
 func _process(delta):
 	accumulated_time += delta
-
-	# Vérifier si l'intervalle aléatoire est atteint
 	if accumulated_time >= next_change_time:
 		accumulated_time = 0.0  
 		_generate_next_change_time()  
 		light_tv.energy = randf_range(4,5)  
 
 func _generate_next_change_time():
-	# Générer un intervalle aléatoire entre 0.1 et 1 seconde
+	# Générer un intervalle aléatoire entre 0.1 et 0.2 seconde
 	next_change_time = randf_range(0.1, 0.2)

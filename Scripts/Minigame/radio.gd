@@ -10,12 +10,16 @@ signal mini_game_completed(success: bool)
 var audio_left_radio
 var audio_right_radio
 var target_frequency = 0
-var frequency_tolerance = 5  # Marge d'erreur acceptable en Hz
+# Marge d'erreur (dans le doute)
+var frequency_tolerance = 5
 
 var validation_timer: Timer
 var is_frequency_correct = false
 
 func _ready():
+
+	# ----------------------- Préparation de l'audio ----------------------- #
+
 	audio_left_radio = AudioStreamPlayer.new()
 	audio_right_radio = AudioStreamPlayer.new()
 	
@@ -27,9 +31,14 @@ func _ready():
 	
 	audio_right_radio.volume_db = -15
 	audio_left_radio.volume_db = -15
+
+	# ----------------------- Connecter les boutons ----------------------- #
+
 	right_radio.pressed.connect(_on_right_radio_pressed)
 	left_radio.pressed.connect(_on_left_radio_pressed)
 	
+	# ----------------------- Connecter le slider ----------------------- #
+
 	hz_slider.value_changed.connect(_on_slider_value_changed)
 	
 	# Initialiser le timer de validation
@@ -41,26 +50,37 @@ func _ready():
 	
 	update_Hz()
 
+# ----------------------- Gestion : Bouton Droite ----------------------- #
+
 func _on_right_radio_pressed():
 	hz_slider.value += 75
 	audio_right_radio.play()
 	check_frequency()
+
+# ----------------------- Gestion : Bouton Gauche ----------------------- #
 
 func _on_left_radio_pressed():
 	hz_slider.value -= 75
 	audio_left_radio.play()
 	check_frequency()
 
+# ----------------------- Gestion : Modif des Hz ----------------------- #
+
 func _on_slider_value_changed(value: float):
 	update_Hz()
 	check_frequency()
-		
+
+# ----------------------- Gestion : Label Hz ----------------------- #
+
 func update_Hz():
 	hz_label.text = str(hz_slider.value) + " Hz"
 
+# ----------------------- Gestion : Slider Hz ----------------------- #
+
 func set_target_frequency(freq: int):
 	target_frequency = freq
-	print("Target frequency set to: ", target_frequency)
+
+# ----------------------- Gestion : Vérification des Hz ----------------------- #
 
 func check_frequency():
 	var current_freq = hz_slider.value
@@ -75,10 +95,14 @@ func check_frequency():
 		validation_timer.stop()
 		print("Timer Stop :", validation_timer)
 
+# ----------------------- Fin du timer et Validation du Mini Jeu ----------------------- #
+
 func _on_validation_timer_timeout():
 	if is_frequency_correct:
 		emit_signal("mini_game_completed", true)
 		print("Timer Fini :", validation_timer)
+
+# ----------------------- Reset du Mini jeu ----------------------- #
 
 func reset_game():
 	hz_slider.value = 300  # Valeur de départ

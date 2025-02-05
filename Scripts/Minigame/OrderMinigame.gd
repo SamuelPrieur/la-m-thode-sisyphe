@@ -7,17 +7,25 @@ var current_index = 0
 var error_count = 0
 var buttons = []
 var audio_player_order
+
 func _ready():
-	
+	reset_game()
+
+	# ----------------------- Préparation de l'audio ----------------------- #
+
 	audio_player_order = AudioStreamPlayer.new()
 	add_child(audio_player_order)
 	audio_player_order.stream = load("res://Assets/Audio/Action/OrderMinigame.wav")
 	audio_player_order.volume_db = -15
-	reset_game()
+	
+	# ----------------------- Connecter les boutons ----------------------- #
+
 	for i in range(1, 11):
 		var button = get_node("OrderButton%d" % i)
 		buttons.append(button)
 		button.pressed.connect(_on_button_pressed.bind(i))
+
+# ----------------------- Gestion : Boutons ----------------------- #
 
 func _on_button_pressed(button_number: int):
 	audio_player_order.play()
@@ -33,9 +41,8 @@ func _on_button_pressed(button_number: int):
 		error_count += 1
 		emit_signal("mini_game_completed", false)
 
+# ----------------------- Reset du Mini jeu ----------------------- #
+
 func reset_game():
 	current_index = 0
 	error_count = 0
-
-func get_error_count() -> int:
-	return error_count
