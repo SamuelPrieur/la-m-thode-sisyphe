@@ -1,0 +1,194 @@
+[gd_scene load_steps=25 format=3 uid="uid://dvj86dd5cswmy"]
+
+[ext_resource type="Texture2D" uid="uid://g1yuduw4rayg" path="res://Assets/Explosion/Composition 1_100.png" id="1_be53q"]
+[ext_resource type="Script" path="res://Scripts/lose.gd" id="1_yfvk5"]
+[ext_resource type="Texture2D" uid="uid://dtm6a3gjc8cs1" path="res://Assets/Explosion/Composition 1_101.png" id="2_8ryiy"]
+[ext_resource type="Texture2D" uid="uid://xm5rrhig3dw2" path="res://Assets/Explosion/Composition 1_102.png" id="3_c3djq"]
+[ext_resource type="Texture2D" uid="uid://t2pvxwvdna5p" path="res://Assets/Explosion/Composition 1_103.png" id="4_87vxr"]
+[ext_resource type="Texture2D" uid="uid://dic0rh0a2ross" path="res://Assets/Explosion/Composition 1_104.png" id="5_5l2am"]
+[ext_resource type="Texture2D" uid="uid://bf7yscmr81o88" path="res://Assets/Explosion/Composition 1_105.png" id="6_6qhwt"]
+[ext_resource type="Texture2D" uid="uid://cs7g3kpk44tjf" path="res://Assets/Explosion/Composition 1_106.png" id="7_vjqma"]
+[ext_resource type="Texture2D" uid="uid://ddbu8puscokmg" path="res://Assets/Explosion/Composition 1_107.png" id="8_eoxs8"]
+[ext_resource type="Texture2D" uid="uid://jloogsie5nc0" path="res://Assets/Explosion/Composition 1_108.png" id="9_bigxk"]
+[ext_resource type="Texture2D" uid="uid://fb0i4qjdrnyd" path="res://Assets/Explosion/Composition 1_109.png" id="10_bukl8"]
+[ext_resource type="Texture2D" uid="uid://detfe2xpqeyku" path="res://Assets/Explosion/Composition 1_110.png" id="11_kmaid"]
+[ext_resource type="Texture2D" uid="uid://oq0sehjp42fk" path="res://Assets/Explosion/Composition 1_111.png" id="12_qqjlc"]
+[ext_resource type="Texture2D" uid="uid://wbbutevcwjhu" path="res://Assets/Explosion/Composition 1_112.png" id="13_213ff"]
+[ext_resource type="Texture2D" uid="uid://byygut2dm2rik" path="res://Assets/Explosion/Composition 1_113.png" id="14_jdl10"]
+[ext_resource type="Texture2D" uid="uid://df1v4q4wcqc7v" path="res://Assets/Explosion/Composition 1_114.png" id="15_6lyig"]
+[ext_resource type="Texture2D" uid="uid://bxi3tcnqdtbio" path="res://Assets/Explosion/Composition 1_115.png" id="16_064i3"]
+[ext_resource type="Texture2D" uid="uid://bmdnssee5jyji" path="res://Assets/Explosion/Composition 1_116.png" id="17_s3ikg"]
+[ext_resource type="Texture2D" uid="uid://qd62l5dpu775" path="res://Assets/Explosion/Composition 1_117.png" id="18_k1smt"]
+[ext_resource type="Texture2D" uid="uid://b0doyhay5nnhc" path="res://Assets/Explosion/Composition 1_118.png" id="19_ox5cm"]
+[ext_resource type="FontFile" uid="uid://dqsa0exp8rcue" path="res://Assets/Font/PPNeueBit-Bold.otf" id="21_0myy0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cbs14"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_be53q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8ryiy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_c3djq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_87vxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_5l2am")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6qhwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_vjqma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_eoxs8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_bigxk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bukl8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_kmaid")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_qqjlc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_213ff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_jdl10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_6lyig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_064i3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_s3ikg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_k1smt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ox5cm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_be53q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_8ryiy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_c3djq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_87vxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_5l2am")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6qhwt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_vjqma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_eoxs8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_bigxk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bukl8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_kmaid")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_qqjlc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_213ff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_jdl10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_6lyig")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_064i3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_s3ikg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_k1smt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ox5cm")
+}],
+"loop": false,
+"name": &"default",
+"speed": 50.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_rpsbn"]
+font = ExtResource("21_0myy0")
+font_size = 150
+
+[sub_resource type="LabelSettings" id="LabelSettings_fdwt7"]
+font = ExtResource("21_0myy0")
+font_size = 90
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_yfvk5")
+
+[node name="Explosion" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_cbs14")
+autoplay = "default"
+frame = 37
+frame_progress = 1.0
+centered = false
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 274.0
+offset_top = 437.0
+offset_right = 1578.0
+offset_bottom = 520.0
+text = "Score : 20"
+label_settings = SubResource("LabelSettings_rpsbn")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ExitButton" type="Button" parent="."]
+z_index = 11
+offset_left = 822.0
+offset_top = 685.0
+offset_right = 1102.0
+offset_bottom = 779.0
+focus_mode = 0
+flat = true
+
+[node name="LabelQuitButton" type="Label" parent="."]
+z_index = 2
+offset_left = 837.0
+offset_top = 704.0
+offset_right = 1084.0
+offset_bottom = 767.0
+text = "QUITTER"
+label_settings = SubResource("LabelSettings_fdwt7")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true

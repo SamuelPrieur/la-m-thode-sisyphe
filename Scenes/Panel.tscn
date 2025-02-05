@@ -1,0 +1,362 @@
+[gd_scene load_steps=46 format=3 uid="uid://daxwxdsya5fvk"]
+
+[ext_resource type="PackedScene" uid="uid://v0fnarppwdp3" path="res://Scenes/Minigame/Button.tscn" id="1_4j8su"]
+[ext_resource type="Script" path="res://Scripts/panel.gd" id="1_oqdju"]
+[ext_resource type="Script" path="res://Scripts/task_manager.gd" id="2_g4bsj"]
+[ext_resource type="PackedScene" uid="uid://cq6qcb2l5duda" path="res://Scenes/Minigame/VerticalSlider.tscn" id="4_1w408"]
+[ext_resource type="FontFile" uid="uid://rjmbgq66tgvi" path="res://Assets/Font/OTBulbClassic-200.otf" id="6_8yd1w"]
+[ext_resource type="PackedScene" uid="uid://b2sp4q3o28mfs" path="res://Assets/TV/TV.tscn" id="6_hjq2f"]
+[ext_resource type="PackedScene" uid="uid://17cf7ihimd4o" path="res://Scenes/Minigame/Order.tscn" id="8_swf1g"]
+[ext_resource type="PackedScene" uid="uid://bjqhoi2yq7ui" path="res://Scenes/ErrorCounter.tscn" id="9_i3tvs"]
+[ext_resource type="PackedScene" uid="uid://doo45nhquufam" path="res://Scenes/Minigame/Radio.tscn" id="10_ldide"]
+[ext_resource type="Texture2D" uid="uid://b2q46woy6841c" path="res://Assets/Avion/Composition 1_00024.png" id="11_xs5tw"]
+[ext_resource type="Texture2D" uid="uid://cp2jmwmf1cbwq" path="res://Assets/Avion/Composition 1_00025.png" id="12_r0iny"]
+[ext_resource type="Texture2D" uid="uid://slwcopqs6jd3" path="res://Assets/Avion/Composition 1_00026.png" id="13_pito7"]
+[ext_resource type="Texture2D" uid="uid://dv0xg2gy3mnbb" path="res://Assets/Avion/Composition 1_00027.png" id="14_xpsvk"]
+[ext_resource type="Texture2D" uid="uid://bdcd42kfhaxue" path="res://Assets/Avion/Composition 1_00028.png" id="15_r75t5"]
+[ext_resource type="Texture2D" uid="uid://day3pxjchjpsr" path="res://Assets/Panel.png" id="15_vkbx0"]
+[ext_resource type="Texture2D" uid="uid://c3p77x3jcg2ht" path="res://Assets/Avion/Composition 1_00029.png" id="16_nr51j"]
+[ext_resource type="Texture2D" uid="uid://062tfmiudddt" path="res://Assets/Avion/Composition 1_00030.png" id="17_es17d"]
+[ext_resource type="Texture2D" uid="uid://c4ys1oasngnef" path="res://Assets/Light/LightError.png" id="17_rk03b"]
+[ext_resource type="Texture2D" uid="uid://dcio18pe76hn" path="res://Assets/Light/Frames/1.png" id="17_xg0gi"]
+[ext_resource type="Texture2D" uid="uid://cf5larqg2ts1" path="res://Assets/Light/Frames/2.png" id="18_35ekg"]
+[ext_resource type="Texture2D" uid="uid://cyusle1fn5er6" path="res://Assets/Avion/Composition 1_00031.png" id="18_wk6p5"]
+[ext_resource type="Texture2D" uid="uid://b45xq37oqrnns" path="res://Assets/Avion/Composition 1_00032.png" id="19_0t50y"]
+[ext_resource type="Texture2D" uid="uid://bh8plww38hfa5" path="res://Assets/Light/Frames/3.png" id="19_ne80p"]
+[ext_resource type="Texture2D" uid="uid://dr06hvwcm7jv0" path="res://Assets/Light/Frames/4.png" id="20_468kd"]
+[ext_resource type="Texture2D" uid="uid://bp0kb506bltx1" path="res://Assets/Avion/Composition 1_00033.png" id="20_mcwme"]
+[ext_resource type="Texture2D" uid="uid://c0564dt82fatv" path="res://Assets/Light/Frames/5.png" id="21_ujf8m"]
+[ext_resource type="Texture2D" uid="uid://2h04ghntli8e" path="res://Assets/Avion/Composition 1_00034.png" id="21_v3015"]
+[ext_resource type="Texture2D" uid="uid://dm0y1kt7bohj3" path="res://Assets/Avion/Composition 1_00035.png" id="22_wvwtu"]
+[ext_resource type="Texture2D" uid="uid://cjlcrrnbkpgx3" path="res://Assets/Light/Frames/6.png" id="22_xb80o"]
+[ext_resource type="Texture2D" uid="uid://chfm5i1b1ot3c" path="res://Assets/Light/Frames/7.png" id="23_cvfl3"]
+[ext_resource type="Texture2D" uid="uid://01r3c8pjt4gv" path="res://Assets/Avion/Composition 1_00036.png" id="23_nq0fk"]
+[ext_resource type="Texture2D" uid="uid://dbbi4pvnwhamw" path="res://Assets/Light/Frames/8.png" id="24_wjg35"]
+[ext_resource type="Texture2D" uid="uid://2jo8bpssxyff" path="res://Assets/Light/Frames/9.png" id="25_1m1k5"]
+[ext_resource type="Texture2D" uid="uid://dt8qie1ylls6r" path="res://Assets/Light/Frames/10.png" id="26_f84qn"]
+[ext_resource type="Texture2D" uid="uid://dxbh7lolovkvv" path="res://Assets/Slider/slider 2.png" id="29_sj4mr"]
+[ext_resource type="Texture2D" uid="uid://itjay38h6muj" path="res://Assets/timer.png" id="35_bhaxy"]
+[ext_resource type="PackedScene" uid="uid://pnrwxqocbnb" path="res://Scenes/cafe.tscn" id="36_mf1ra"]
+[ext_resource type="PackedScene" uid="uid://0klunj0c1ti" path="res://Scenes/Minigame/KeyPad.tscn" id="38_udp48"]
+[ext_resource type="PackedScene" uid="uid://p48jwya14kf0" path="res://Scenes/Minigame/CubePlacement.tscn" id="39_ngimo"]
+[ext_resource type="AudioStream" uid="uid://n2usvqw832v3" path="res://Assets/Audio/Ambiant/AmbiencePlane.wav" id="40_jltsj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v7p67"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_xs5tw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_r0iny")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_pito7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_xpsvk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_r75t5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_nr51j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_es17d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_wk6p5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_0t50y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_mcwme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_v3015")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_wvwtu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_nq0fk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 25.0
+}]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_bvvnn"]
+blend_mode = 1
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xka8h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_xg0gi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_35ekg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ne80p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_468kd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ujf8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_xb80o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_cvfl3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_wjg35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_1m1k5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_f84qn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_082bn"]
+line_spacing = 35.0
+font = ExtResource("6_8yd1w")
+font_size = 35
+font_color = Color(0, 1, 0, 1)
+shadow_size = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_cqunm"]
+line_spacing = 0.0
+font = ExtResource("6_8yd1w")
+font_size = 50
+
+[node name="Panel" type="Node2D"]
+script = ExtResource("1_oqdju")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = -4
+position = Vector2(-53.3334, -30)
+scale = Vector2(1.05556, 1.05556)
+sprite_frames = SubResource("SpriteFrames_v7p67")
+autoplay = "default"
+centered = false
+metadata/_edit_lock_ = true
+
+[node name="Panneau" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(960, 540)
+scale = Vector2(1.05691, 1.05828)
+texture = ExtResource("15_vkbx0")
+
+[node name="TV" parent="." instance=ExtResource("6_hjq2f")]
+position = Vector2(288, 112)
+scale = Vector2(0.337719, 0.337719)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 75.9
+one_shot = true
+
+[node name="FadeRect" type="ColorRect" parent="."]
+visible = false
+z_index = 4096
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="Alert" type="Sprite2D" parent="."]
+position = Vector2(795.995, 49.7848)
+rotation = -3.16603
+scale = Vector2(0.0901653, 0.0897347)
+texture = ExtResource("17_rk03b")
+
+[node name="AlertLight" type="AnimatedSprite2D" parent="."]
+modulate = Color(1, 0, 0, 0.392157)
+z_index = 100
+material = SubResource("CanvasItemMaterial_bvvnn")
+position = Vector2(791, 67)
+scale = Vector2(3.52734, 3.52734)
+sprite_frames = SubResource("SpriteFrames_xka8h")
+autoplay = "default"
+frame_progress = 0.557843
+metadata/_edit_lock_ = true
+
+[node name="TaskManager" type="Node" parent="."]
+script = ExtResource("2_g4bsj")
+
+[node name="ProgressBar" type="ProgressBar" parent="TaskManager"]
+anchors_preset = -1
+anchor_right = 0.859896
+anchor_bottom = 0.00925926
+offset_right = 269.0
+offset_bottom = 11.0
+show_percentage = false
+metadata/_edit_use_anchors_ = true
+
+[node name="SliderBack3" type="Sprite2D" parent="TaskManager"]
+position = Vector2(238, 788)
+scale = Vector2(0.214, 0.214)
+texture = ExtResource("29_sj4mr")
+
+[node name="Slider3" parent="TaskManager" instance=ExtResource("4_1w408")]
+anchors_preset = -1
+anchor_left = -0.798437
+anchor_top = -0.0231481
+anchor_right = -0.798437
+anchor_bottom = 0.169444
+offset_left = 1742.0
+offset_top = 724.0
+offset_right = 2159.0
+offset_bottom = 2103.0
+scale = Vector2(0.12, 0.12)
+
+[node name="SliderBack2" type="Sprite2D" parent="TaskManager"]
+position = Vector2(350, 788)
+scale = Vector2(0.214, 0.214)
+texture = ExtResource("29_sj4mr")
+
+[node name="Slider2" parent="TaskManager" instance=ExtResource("4_1w408")]
+anchors_preset = -1
+anchor_left = -0.798437
+anchor_top = -0.0231481
+anchor_right = -0.798437
+anchor_bottom = 0.169444
+offset_left = 1854.0
+offset_top = 724.0
+offset_right = 2271.0
+offset_bottom = 2103.0
+scale = Vector2(0.12, 0.12)
+
+[node name="SliderBack1" type="Sprite2D" parent="TaskManager"]
+position = Vector2(461, 788)
+scale = Vector2(0.214, 0.214)
+texture = ExtResource("29_sj4mr")
+
+[node name="Slider1" parent="TaskManager" instance=ExtResource("4_1w408")]
+anchors_preset = -1
+anchor_left = -0.798437
+anchor_top = -0.0231481
+anchor_right = -0.798437
+anchor_bottom = 0.169444
+offset_left = 1965.0
+offset_top = 724.0
+offset_right = 2382.0
+offset_bottom = 2103.0
+scale = Vector2(0.12, 0.12)
+
+[node name="Button1" parent="TaskManager" instance=ExtResource("1_4j8su")]
+offset_left = 1184.0
+offset_top = 698.0
+offset_right = 1253.0
+offset_bottom = 760.0
+action_mode = 0
+
+[node name="Button2" parent="TaskManager" instance=ExtResource("1_4j8su")]
+offset_left = 1195.0
+offset_top = 765.0
+offset_right = 1264.0
+offset_bottom = 827.0
+action_mode = 0
+
+[node name="Button3" parent="TaskManager" instance=ExtResource("1_4j8su")]
+offset_left = 1206.0
+offset_top = 834.0
+offset_right = 1275.0
+offset_bottom = 896.0
+action_mode = 0
+
+[node name="Button4" parent="TaskManager" instance=ExtResource("1_4j8su")]
+offset_left = 667.0
+offset_top = 703.0
+offset_right = 736.0
+offset_bottom = 765.0
+action_mode = 0
+
+[node name="Button5" parent="TaskManager" instance=ExtResource("1_4j8su")]
+offset_left = 657.0
+offset_top = 767.0
+offset_right = 726.0
+offset_bottom = 829.0
+action_mode = 0
+
+[node name="Button6" parent="TaskManager" instance=ExtResource("1_4j8su")]
+offset_left = 644.0
+offset_top = 834.0
+offset_right = 713.0
+offset_bottom = 896.0
+action_mode = 0
+
+[node name="OrderMinigame" parent="TaskManager" instance=ExtResource("8_swf1g")]
+position = Vector2(1413, 500)
+skew = -0.174533
+
+[node name="RadioMinigame" parent="TaskManager" instance=ExtResource("10_ldide")]
+position = Vector2(1304, 133)
+scale = Vector2(0.45, 0.45)
+
+[node name="CubePlacemement" parent="TaskManager" instance=ExtResource("39_ngimo")]
+position = Vector2(1275, 543)
+scale = Vector2(0.32, 0.32)
+
+[node name="Keypad" parent="TaskManager" instance=ExtResource("38_udp48")]
+position = Vector2(285, 545)
+scale = Vector2(0.27, 0.27)
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_left = 712.0
+offset_top = 367.0
+offset_right = 784.0
+offset_bottom = 412.0
+label_settings = SubResource("LabelSettings_082bn")
+horizontal_alignment = 2
+vertical_alignment = 1
+autowrap_mode = 1
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+energy = 0.1
+blend_mode = 1
+
+[node name="ErrorCounter" parent="." instance=ExtResource("9_i3tvs")]
+position = Vector2(992, 293)
+scale = Vector2(0.3, 0.3)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(863, 331)
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("35_bhaxy")
+flip_h = true
+
+[node name="TimerLabel" type="Label" parent="."]
+z_index = 7
+offset_left = 787.0
+offset_top = 348.0
+offset_right = 938.0
+offset_bottom = 413.0
+text = "11:11"
+label_settings = SubResource("LabelSettings_cqunm")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CafeAnimation" parent="." instance=ExtResource("36_mf1ra")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("40_jltsj")
+autoplay = true

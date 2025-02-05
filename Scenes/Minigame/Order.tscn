@@ -1,0 +1,114 @@
+[gd_scene load_steps=4 format=3 uid="uid://17cf7ihimd4o"]
+
+[ext_resource type="Script" path="res://Scripts/Minigame/OrderMinigame.gd" id="1_k73cg"]
+[ext_resource type="Script" path="res://addons/MultiTouchGui/MultiTouchButton.gd" id="1_tlnh6"]
+
+[sub_resource type="ButtonGroup" id="ButtonGroup_t2ul5"]
+
+[node name="OrderMinigame" type="Node2D"]
+script = ExtResource("1_k73cg")
+
+[node name="OrderButton1" type="Button" parent="."]
+offset_right = 50.0
+offset_bottom = 50.0
+toggle_mode = true
+button_group = SubResource("ButtonGroup_t2ul5")
+text = "1"
+script = ExtResource("1_tlnh6")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderButton2" type="Button" parent="."]
+offset_left = 100.0
+offset_top = 50.0
+offset_right = 150.0
+offset_bottom = 100.0
+toggle_mode = true
+button_group = SubResource("ButtonGroup_t2ul5")
+text = "2"
+script = ExtResource("1_tlnh6")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderButton3" type="Button" parent="."]
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 100.0
+offset_bottom = 100.0
+toggle_mode = true
+button_group = SubResource("ButtonGroup_t2ul5")
+text = "3
+"
+script = ExtResource("1_tlnh6")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderButton4" type="Button" parent="."]
+offset_left = 200.0
+offset_top = 50.0
+offset_right = 250.0
+offset_bottom = 100.0
+toggle_mode = true
+button_group = SubResource("ButtonGroup_t2ul5")
+text = "4"
+script = ExtResource("1_tlnh6")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderButton5" type="Button" parent="."]
+offset_left = 100.0
+offset_right = 150.0
+offset_bottom = 50.0
+toggle_mode = true
+button_group = SubResource("ButtonGroup_t2ul5")
+text = "5
+"
+script = ExtResource("1_tlnh6")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderButton6" type="Button" parent="."]
+offset_left = 200.0
+offset_right = 250.0
+offset_bottom = 50.0
+toggle_mode = true
+button_group = SubResource("ButtonGroup_t2ul5")
+text = "6"
+script = ExtResource("1_tlnh6")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderButton7" type="Button" parent="."]
+offset_left = 150.0
+offset_right = 200.0
+offset_bottom = 50.0
+toggle_mode = true
+button_group = SubResource("ButtonGroup_t2ul5")
+text = "7"
+script = ExtResource("1_tlnh6")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderButton8" type="Button" parent="."]
+offset_left = 50.0
+offset_right = 100.0
+offset_bottom = 50.0
+toggle_mode = true
+button_group = SubResource("ButtonGroup_t2ul5")
+text = "8"
+script = ExtResource("1_tlnh6")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderButton9" type="Button" parent="."]
+offset_top = 50.0
+offset_right = 50.0
+offset_bottom = 100.0
+toggle_mode = true
+button_group = SubResource("ButtonGroup_t2ul5")
+text = "9"
+script = ExtResource("1_tlnh6")
+metadata/_edit_use_anchors_ = true
+
+[node name="OrderButton10" type="Button" parent="."]
+offset_left = 150.0
+offset_top = 50.0
+offset_right = 200.0
+offset_bottom = 100.0
+toggle_mode = true
+button_group = SubResource("ButtonGroup_t2ul5")
+text = "10"
+script = ExtResource("1_tlnh6")
+metadata/_edit_use_anchors_ = true
