@@ -156,6 +156,8 @@ func _on_task_failed(task_id: String):
 		audio_player_error.play()
 	if error_count >= 3:
 		croix3.modulate.a = 1
+		audio_player_error.play()
+	if error_count >= 4:
 		audio_player_lose.play()
 		explosion.play("Explosion") 
 		explosion.animation_finished.connect(_on_explosion_animation_finished)
@@ -195,7 +197,7 @@ func change_level():
 	Global.level += 1
 	var task_manager = $TaskManager
 	var error_count = task_manager.get_failed_tasks_count()
-	if error_count >= 3:
+	if error_count > 3:
 		get_tree().change_scene_to_file("res://Scenes/Lose.tscn")
 	else:
 		get_tree().change_scene_to_file("res://Scenes/LevelTransition.tscn")

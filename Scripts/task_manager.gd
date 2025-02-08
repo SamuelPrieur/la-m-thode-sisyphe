@@ -309,7 +309,7 @@ func _on_task_timeout():
 	shake_screen(3, 0.8)
 	error_counter +=1
 	task_failed.emit(current_task["id"])
-	if error_counter < 3:
+	if error_counter <= 3:
 		start_random_task() 
 	else:
 		return

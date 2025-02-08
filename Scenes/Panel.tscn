@@ -412,7 +412,7 @@ position = Vector2(288, 112)
 scale = Vector2(0.337719, 0.337719)
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 75.9
+wait_time = 90.9
 one_shot = true
 
 [node name="FadeRect" type="ColorRect" parent="."]
