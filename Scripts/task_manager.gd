@@ -57,7 +57,13 @@ var available_tasks = [
 	{"id": "KeyPadMinigame", "description": "Entrez le code %s", "button_node": "KeyPad", "time_allowed": "30"},
 
 	# Cube Placement
-	{"id": "CubePlacement", "description": "Recentrez le cube", "button_node": "CubePlacement", "time_allowed": "10"}
+	{"id": "CubePlacement", "description": "Recentrez le cube", "button_node": "CubePlacement", "time_allowed": "10"},
+
+	# Labyrinthe
+	#{"id": "Labyrinthe", "description": "Faire sortir le rat %d","niveau": ["du moteur","de l'alternateur","du pot d'échappement"], "button_node": "LabyrintheMinigame", "time_allowed": "30"},
+
+	# Signal
+	#{"id": "Signal", "description": "Changer l'oscillation du signal sur %d","signal": ["Mars","Lune","Brésil","Alpha","Tango","Quebec"], "button_node": "LabyrintheMinigame", "time_allowed": "30"}
 ]
 
 
@@ -87,8 +93,9 @@ func _ready():
 		elif task["id"] == "KeyPadMinigame" :
 			continue
 		elif task["id"] == "CubePlacement" :
-			var cube_minigame_node = get_node("CubePlacement")
-			cube_minigame_node.mini_game_completed.connect(_on_cube_minigame_completed)
+			continue
+		elif task["id"] == "Labyrinthe" :
+			continue
 
 		elif task["id"] == "RadioMinigame":
 			var radio_node = get_node(task["button_node"])
@@ -110,7 +117,7 @@ func _ready():
 
 # ----------------------- Changer l'état de la lumière pendant la tache ----------------------- #
 
-func orange_light():
+func hold_light():
 	await get_tree().create_timer(0.5).timeout
 	Global.lightState = "Hold"
 
@@ -118,7 +125,7 @@ func orange_light():
 
 func start_random_task():
 	# Réinitialisation de la lumière
-	orange_light()
+	hold_light()
 	# Nouvelle tache aléatoire, obligatoirement différente de la dernière
 	var available_choices = available_tasks.filter(func(task): return task["id"] != last_completed_task_id)
 	current_task = available_choices[randi() % available_choices.size()]
@@ -265,9 +272,12 @@ func _on_order_minigame_completed(success: bool):
 # ----------------------- Condition : Mini jeu Cube ----------------------- #
 
 func start_cube_minigame():
-	var cube_minigame = get_node("OrderMinigame")
+	var cube_minigame = get_node("CubePlacement") 
+	
+	if cube_minigame.mini_game_completed.is_connected(_on_cube_minigame_completed):
+		cube_minigame.mini_game_completed.disconnect(_on_cube_minigame_completed)
+	
 	cube_minigame.mini_game_completed.connect(_on_cube_minigame_completed)
-	cube_minigame.reset_game()
 	
 	task_timer.stop()
 	initial_time = float(current_task["time_allowed"])
@@ -277,15 +287,22 @@ func start_cube_minigame():
 	task_timer.start()
 
 func _on_cube_minigame_completed(success: bool):
-	var cube_minigame = get_node("OrderMinigame")
-	cube_minigame.mini_game_completed.disconnect(_on_cube_minigame_completed)
+	var cube_minigame = get_node("CubePlacement")  
 	
-	if success:
-		complete_current_task()
+	if current_task and current_task["id"] == "CubePlacement":
+		if cube_minigame.mini_game_completed.is_connected(_on_cube_minigame_completed):
+			cube_minigame.mini_game_completed.disconnect(_on_cube_minigame_completed)
+		
+		if success:
+			complete_current_task()
+		else:
+			error_counter += 1
+			task_failed.emit(current_task["id"])
+			start_random_task()
 	else:
-		error_counter += 1
-		task_failed.emit(current_task["id"])
-		start_random_task()
+		if cube_minigame.mini_game_completed.is_connected(_on_cube_minigame_completed):
+			cube_minigame.mini_game_completed.disconnect(_on_cube_minigame_completed)
+
 
 # ----------------------- Condition : Mini jeu radio ----------------------- #
 
