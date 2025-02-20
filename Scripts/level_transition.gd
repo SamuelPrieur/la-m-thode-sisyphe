@@ -15,6 +15,8 @@ func _ready():
 		4:
 			video_player.stream = preload("res://Assets/Videos/Orage.ogv")
 		5:
+			video_player.stream = preload("res://Assets/Videos/Feu.ogv")
+		6:
 			video_player.stream = preload("res://Assets/Videos/Amerrissage.ogv")
 	video_player.play()
 	video_player.finished.connect(_on_video_finished)

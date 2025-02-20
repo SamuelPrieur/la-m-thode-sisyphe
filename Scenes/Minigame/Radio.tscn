@@ -1,27 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://doo45nhquufam"]
+[gd_scene load_steps=11 format=3 uid="uid://doo45nhquufam"]
 
 [ext_resource type="Script" path="res://Scripts/Minigame/radio.gd" id="1_htqji"]
-[ext_resource type="Texture2D" uid="uid://d1n03ca24dctw" path="res://Assets/Radio/radio frame.png" id="2_tuqin"]
-[ext_resource type="Texture2D" uid="uid://csb6dudatd3ps" path="res://Assets/Radio/haut parleur/haut parleur pos 1.png" id="3_jl70y"]
-[ext_resource type="Texture2D" uid="uid://nx10dcdf7jbt" path="res://Assets/Radio/button 2 off.png" id="3_ujk3i"]
-[ext_resource type="Texture2D" uid="uid://c73x5fdpof11i" path="res://Assets/Radio/haut parleur/haut parleur pos 2.png" id="4_r7kfp"]
-[ext_resource type="Texture2D" uid="uid://q6cbd1y1gmwt" path="res://Assets/Radio/button 1 off.png" id="4_u8jbl"]
-[ext_resource type="Texture2D" uid="uid://y154mxu328vm" path="res://Assets/Radio/cursor.png" id="5_26r1f"]
+[ext_resource type="Texture2D" uid="uid://dn4mm35gpxhx0" path="res://Assets/MiniJeux/Radio/FondRadio.png" id="2_qesvt"]
+[ext_resource type="Texture2D" uid="uid://nx10dcdf7jbt" path="res://Assets/MiniJeux/Radio/button 2 off.png" id="3_ujk3i"]
+[ext_resource type="Texture2D" uid="uid://q6cbd1y1gmwt" path="res://Assets/MiniJeux/Radio/button 1 off.png" id="4_u8jbl"]
+[ext_resource type="Texture2D" uid="uid://y154mxu328vm" path="res://Assets/MiniJeux/Radio/cursor.png" id="5_26r1f"]
 [ext_resource type="FontFile" uid="uid://bvajmxv1r2504" path="res://Assets/Font/PPMondwest-Regular.otf" id="6_ny8u1"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_c0web"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_jl70y")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_r7kfp")
-}],
-"loop": true,
-"name": &"default",
-"speed": 3.0
-}]
 
 [sub_resource type="ImageTexture" id="ImageTexture_2eq3b"]
 
@@ -38,21 +22,16 @@ script = ExtResource("1_htqji")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = 1
-texture = ExtResource("2_tuqin")
+texture = ExtResource("2_qesvt")
 centered = false
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(487, 96)
-sprite_frames = SubResource("SpriteFrames_c0web")
-autoplay = "default"
-frame_progress = 0.720845
 
 [node name="RightRadio" type="TextureButton" parent="."]
 z_index = 2
-offset_left = 489.0
-offset_top = 496.0
-offset_right = 579.0
-offset_bottom = 578.0
+offset_left = 536.0
+offset_top = 487.0
+offset_right = 626.0
+offset_bottom = 569.0
+scale = Vector2(1.05, 1.05)
 action_mode = 0
 texture_normal = ExtResource("3_ujk3i")
 texture_pressed = SubResource("ImageTexture_2eq3b")
@@ -62,10 +41,11 @@ metadata/_edit_use_anchors_ = true
 
 [node name="LeftRadio" type="TextureButton" parent="."]
 z_index = 2
-offset_left = 45.0
-offset_top = 496.0
-offset_right = 135.0
-offset_bottom = 578.0
+offset_left = 52.0
+offset_top = 486.0
+offset_right = 142.0
+offset_bottom = 568.0
+scale = Vector2(1.05, 1.05)
 action_mode = 0
 texture_normal = ExtResource("4_u8jbl")
 texture_pressed = SubResource("ImageTexture_677r5")
@@ -75,10 +55,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="HzSlider" type="HSlider" parent="."]
 z_index = 2
-offset_left = 184.0
-offset_top = 428.0
-offset_right = 498.0
-offset_bottom = 444.0
+offset_left = 197.0
+offset_top = 420.0
+offset_right = 511.0
+offset_bottom = 436.0
 theme_override_icons/grabber_disabled = ExtResource("5_26r1f")
 theme_override_styles/slider = SubResource("StyleBoxTexture_ojhat")
 min_value = 300.0
@@ -91,10 +71,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="HzLabel" type="Label" parent="."]
 z_index = 2
-offset_left = 77.0
-offset_top = 316.0
-offset_right = 193.0
-offset_bottom = 358.0
+offset_left = 81.0
+offset_top = 303.0
+offset_right = 197.0
+offset_bottom = 345.0
 text = "600 Hz"
 label_settings = SubResource("LabelSettings_j7uc6")
 metadata/_edit_use_anchors_ = true

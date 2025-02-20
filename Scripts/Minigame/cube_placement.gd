@@ -49,7 +49,7 @@ func randomize_position():
 	
 	# Relance le tirage si l'une des valeurs est inférieure à 30
 	while abs(random_x) < 30 or abs(random_y) < 30:
-		random_x = rng.randi_range(-100, 100)
+		random_x = rng.randi_range(-130, 130)
 		random_y = rng.randi_range(-100, 100)
 	
 	cube.position = Vector2(random_x, random_y)
@@ -95,7 +95,6 @@ func check_if_centered():
 		if not is_centered:
 			emit_signal("mini_game_completed", true)
 			is_centered = true
-			print("centré!")
 			return
 	else:
 		is_centered = false

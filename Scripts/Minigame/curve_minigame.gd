@@ -5,18 +5,37 @@ extends Node2D
 @export var speed: float = 8.0  
 @export var points_count: int = 500 
 
+signal mini_game_completed(success: bool)
+signal signal_selected(signal_name: String)
+
 var time: float = 0.0
+var current_signal = ""
 @onready var line: Line2D = $Line2D
-@onready var changeCurveButton: TextureButton = $ChangeCurve
-@onready var changeColorButton: TextureButton = $ChangeColor
+@onready var changeCurveButton = $ChangeCurve
+@onready var changeColorButton = $ChangeColor
 
 enum CurveType { SIN, M, SQUARE }
 var current_curve: int = CurveType.SIN
 var current_color: Color = Color(1, 1, 0)
 
+var validation_timer: Timer
+var is_signal_correct = false
+var validation_duration = 0.5 
+
 func _ready():
 	changeCurveButton.pressed.connect(_on_curve_button_pressed)
 	changeColorButton.pressed.connect(_on_color_button_pressed)
+
+	var main_game = get_node("/root/Panel/TaskManager")
+	#if main_game.signal_minigame_selected.is_connected(randomize_signal):
+		#main_game.signal_minigame_selected.disconnect(randomize_signal)
+	#main_game.signal_minigame_selected.connect(randomize_signal)
+	
+	validation_timer = Timer.new()
+	validation_timer.wait_time = validation_duration
+	validation_timer.one_shot = true
+	validation_timer.timeout.connect(_on_validation_timer_timeout)
+	add_child(validation_timer)
 
 func _process(delta):
 	time += delta * speed
@@ -41,13 +60,67 @@ func _process(delta):
 	line.points = new_points
 	line.default_color = current_color 
 
+func randomize_signal():
+	print("Fonction randomize_signal appelée")
+
+	var signal_options = ["Mars", "Lune", "Brésil", "Alpha", "Tango", "Quebec"]
+	var selected_signal = signal_options[randi() % signal_options.size()]
+
+	while selected_signal == current_signal:
+		selected_signal = signal_options[randi() % signal_options.size()]
+
+	emit_signal("signal_selected", selected_signal)
+	current_signal = selected_signal
+	
+	is_signal_correct = false
+	validation_timer.stop()
+
 func _on_curve_button_pressed():
 	current_curve = (current_curve + 1) % CurveType.size()
+	check_curve_and_color()
 
 func _on_color_button_pressed():
 	if current_color == Color(1,1,0):
-		current_color = Color(0, 1, 1)  
+		current_color = Color(0, 1, 1)  # Bleu
 	elif current_color == Color(0, 1, 1) :
-		current_color = Color(0, 1, 0)  
+		current_color = Color(0, 1, 0)  # Vert
 	else:
-		current_color = Color(1, 1, 0)  
+		current_color = Color(1, 1, 0) # Jaune
+
+	check_curve_and_color()  
+
+func check_curve_and_color():
+	var is_correct = false
+	
+	if current_signal == "Mars" and current_color == Color(0, 1, 0) and current_curve == CurveType.SIN:
+		is_correct = true
+	elif current_signal == "Lune" and current_color == Color(1, 1, 0) and current_curve == CurveType.SQUARE:
+		is_correct = true
+	elif current_signal == "Brésil" and current_color == Color(0, 1, 1) and current_curve == CurveType.M:
+		is_correct = true
+	elif current_signal == "Alpha" and current_color == Color(0, 1, 0) and current_curve == CurveType.SQUARE:
+		is_correct = true
+	elif current_signal == "Tango" and current_color == Color(1, 1, 0) and current_curve == CurveType.M:
+		is_correct = true
+	elif current_signal == "Quebec" and current_color == Color(0, 1, 1) and current_curve == CurveType.SIN:
+		is_correct = true
+	
+	if is_correct and !is_signal_correct:
+		is_signal_correct = true
+		validation_timer.start()
+		print("Timer de validation démarré: ", validation_duration, " secondes")
+	elif !is_correct and is_signal_correct:
+		is_signal_correct = false
+		validation_timer.stop()
+		print("Timer de validation arrêté")
+
+func _on_validation_timer_timeout():
+	if is_signal_correct:
+		print("Signal maintenu pendant ", validation_duration, " secondes - Validation réussie!")
+		emit_signal("mini_game_completed", true)
+
+func reset_game():
+	current_curve = CurveType.SIN
+	current_color = Color(1, 1, 0)
+	is_signal_correct = false
+	validation_timer.stop()

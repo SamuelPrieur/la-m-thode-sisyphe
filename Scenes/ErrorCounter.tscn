@@ -5,7 +5,7 @@
 
 [node name="ErrorCounter" type="Node2D"]
 
-[node name="Croix1" type="Sprite2D" parent="."]
+[node name="Croix3" type="Sprite2D" parent="."]
 z_index = 1
 position = Vector2(272.5, 291)
 scale = Vector2(0.388889, 0.388889)
@@ -17,7 +17,7 @@ position = Vector2(523.5, 291)
 scale = Vector2(0.388889, 0.388889)
 texture = ExtResource("1_3sep2")
 
-[node name="Croix3" type="Sprite2D" parent="."]
+[node name="Croix1" type="Sprite2D" parent="."]
 z_index = 1
 position = Vector2(767.5, 291)
 scale = Vector2(0.388889, 0.388889)

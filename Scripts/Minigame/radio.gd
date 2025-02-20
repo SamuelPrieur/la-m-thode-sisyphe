@@ -41,9 +41,8 @@ func _ready():
 
 	hz_slider.value_changed.connect(_on_slider_value_changed)
 	
-	# Initialiser le timer de validation
 	validation_timer = Timer.new()
-	validation_timer.wait_time = 0.5  # 1 seconde
+	validation_timer.wait_time = 0.5  
 	validation_timer.one_shot = true
 	validation_timer.timeout.connect(_on_validation_timer_timeout)
 	add_child(validation_timer)

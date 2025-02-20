@@ -1,4 +1,4 @@
-[gd_scene load_steps=108 format=3 uid="uid://daxwxdsya5fvk"]
+[gd_scene load_steps=125 format=3 uid="uid://daxwxdsya5fvk"]
 
 [ext_resource type="PackedScene" uid="uid://v0fnarppwdp3" path="res://Scenes/Minigame/Button.tscn" id="1_4j8su"]
 [ext_resource type="Script" path="res://Scripts/panel.gd" id="1_oqdju"]
@@ -13,8 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://cp2jmwmf1cbwq" path="res://Assets/Avion/Composition 1_00025.png" id="12_r0iny"]
 [ext_resource type="Texture2D" uid="uid://slwcopqs6jd3" path="res://Assets/Avion/Composition 1_00026.png" id="13_pito7"]
 [ext_resource type="Texture2D" uid="uid://dv0xg2gy3mnbb" path="res://Assets/Avion/Composition 1_00027.png" id="14_xpsvk"]
+[ext_resource type="Texture2D" uid="uid://ct5vbvorbfapd" path="res://Assets/cockpitFinal.png" id="15_ctu28"]
 [ext_resource type="Texture2D" uid="uid://bdcd42kfhaxue" path="res://Assets/Avion/Composition 1_00028.png" id="15_r75t5"]
-[ext_resource type="Texture2D" uid="uid://day3pxjchjpsr" path="res://Assets/Panel.png" id="15_vkbx0"]
 [ext_resource type="Texture2D" uid="uid://c3p77x3jcg2ht" path="res://Assets/Avion/Composition 1_00029.png" id="16_nr51j"]
 [ext_resource type="Texture2D" uid="uid://062tfmiudddt" path="res://Assets/Avion/Composition 1_00030.png" id="17_es17d"]
 [ext_resource type="Texture2D" uid="uid://c4ys1oasngnef" path="res://Assets/Light/LightError.png" id="17_rk03b"]
@@ -34,7 +34,9 @@
 [ext_resource type="Texture2D" uid="uid://dbbi4pvnwhamw" path="res://Assets/Light/Frames/8.png" id="24_wjg35"]
 [ext_resource type="Texture2D" uid="uid://2jo8bpssxyff" path="res://Assets/Light/Frames/9.png" id="25_1m1k5"]
 [ext_resource type="Texture2D" uid="uid://dt8qie1ylls6r" path="res://Assets/Light/Frames/10.png" id="26_f84qn"]
-[ext_resource type="Texture2D" uid="uid://dxbh7lolovkvv" path="res://Assets/Slider/slider 2.png" id="29_sj4mr"]
+[ext_resource type="Texture2D" uid="uid://buvgrxbk8tdos" path="res://Assets/Jauge/jauge_bg.png" id="29_qyncq"]
+[ext_resource type="Texture2D" uid="uid://dxbh7lolovkvv" path="res://Assets/MiniJeux/Slider/slider 2.png" id="29_sj4mr"]
+[ext_resource type="Texture2D" uid="uid://o7iw065kohrl" path="res://Assets/Jauge/jauge_vitre.png" id="30_l7ty0"]
 [ext_resource type="Texture2D" uid="uid://itjay38h6muj" path="res://Assets/timer.png" id="35_bhaxy"]
 [ext_resource type="PackedScene" uid="uid://pnrwxqocbnb" path="res://Scenes/cafe.tscn" id="36_mf1ra"]
 [ext_resource type="PackedScene" uid="uid://0klunj0c1ti" path="res://Scenes/Minigame/KeyPad.tscn" id="38_udp48"]
@@ -94,12 +96,26 @@
 [ext_resource type="Texture2D" uid="uid://c8ao2ly8eocca" path="res://Assets/Explosion/explosion_00051.png" id="91_hybvp"]
 [ext_resource type="Texture2D" uid="uid://b3v4pdpafvaix" path="res://Assets/Explosion/explosion_00052.png" id="92_f8liy"]
 [ext_resource type="Texture2D" uid="uid://bjg7fhpbmh7su" path="res://Assets/Explosion/explosion_00053.png" id="93_qyujm"]
+[ext_resource type="Texture2D" uid="uid://cdcxic6ec7blr" path="res://Assets/MiniJeux/Vitesse/VitesseButtonUp.png" id="94_8sif2"]
 [ext_resource type="Texture2D" uid="uid://d1ibysn8xa6gc" path="res://Assets/Explosion/explosion_00054.png" id="94_q5lu5"]
+[ext_resource type="Texture2D" uid="uid://b3y8fhp3uh06b" path="res://Assets/MiniJeux/Vitesse/VitesseButtonDown.png" id="95_vo51c"]
 [ext_resource type="Texture2D" uid="uid://degjyc8am77hs" path="res://Assets/Explosion/explosion_00055.png" id="95_ypaf1"]
 [ext_resource type="Texture2D" uid="uid://chiqavx5j0wr8" path="res://Assets/Explosion/explosion_00056.png" id="96_yl4ht"]
 [ext_resource type="Texture2D" uid="uid://ch06xnlr03ags" path="res://Assets/Explosion/explosion_00057.png" id="97_8g6p0"]
 [ext_resource type="Texture2D" uid="uid://ea7p1orf2j31" path="res://Assets/Explosion/explosion_00058.png" id="98_rxp81"]
 [ext_resource type="Texture2D" uid="uid://duw5d0lk1kes5" path="res://Assets/Explosion/explosion_00059.png" id="99_epld3"]
+[ext_resource type="PackedScene" uid="uid://djgknxy2afku4" path="res://Scenes/Minigame/curve_minigame.tscn" id="101_s1wen"]
+[ext_resource type="Texture2D" uid="uid://dicohot5qhrol" path="res://Assets/MiniJeux/Nitro/bouton on nitro.png" id="102_auvl3"]
+[ext_resource type="PackedScene" uid="uid://b1boh8yiojwfm" path="res://Scenes/Minigame/rotation_minigame.tscn" id="102_srneo"]
+[ext_resource type="PackedScene" uid="uid://bn0w56kkgq58e" path="res://Scenes/Minigame/labyrinthe_minigame.tscn" id="103_cb54i"]
+[ext_resource type="Texture2D" uid="uid://p2tjee2namff" path="res://Assets/MiniJeux/Nitro/nos.png" id="104_l4er0"]
+[ext_resource type="Script" path="res://addons/MultiTouchGui/MultiTouchButton.gd" id="105_nuyac"]
+[ext_resource type="PackedScene" uid="uid://bhp7rwdkrgdbx" path="res://Scenes/Minigame/eject_button.tscn" id="108_3r7v1"]
+[ext_resource type="PackedScene" uid="uid://bk7ssxsrkdmvv" path="res://Scenes/Minigame/ventilateur.tscn" id="109_lenho"]
+[ext_resource type="Texture2D" uid="uid://bm6t6y8wkv2ev" path="res://Assets/MiniJeux/Leviers/Levier1/Levier1_off.png" id="110_prfby"]
+[ext_resource type="Texture2D" uid="uid://jv84olfme0bq" path="res://Assets/MiniJeux/Leviers/Levier2/Levier2_off.png" id="110_wh2ms"]
+[ext_resource type="Texture2D" uid="uid://mjlytut2c0s6" path="res://Assets/MiniJeux/Leviers/Levier2/Levier2_on.png" id="111_l2f1m"]
+[ext_resource type="Texture2D" uid="uid://dpsvq7ypr11of" path="res://Assets/MiniJeux/Leviers/Levier1/Levier1_on.png" id="111_sotw8"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_v7p67"]
 animations = [{
@@ -147,62 +163,6 @@ animations = [{
 "name": &"default",
 "speed": 25.0
 }]
-
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_bvvnn"]
-blend_mode = 1
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_xka8h"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("17_xg0gi")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_35ekg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_ne80p")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_468kd")
-}, {
-"duration": 1.0,
-"texture": ExtResource("21_ujf8m")
-}, {
-"duration": 1.0,
-"texture": ExtResource("22_xb80o")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_cvfl3")
-}, {
-"duration": 1.0,
-"texture": ExtResource("24_wjg35")
-}, {
-"duration": 1.0,
-"texture": ExtResource("25_1m1k5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("26_f84qn")
-}],
-"loop": true,
-"name": &"default",
-"speed": 10.0
-}]
-
-[sub_resource type="LabelSettings" id="LabelSettings_082bn"]
-line_spacing = 35.0
-font = ExtResource("6_8yd1w")
-font_size = 35
-font_color = Color(0, 1, 0, 1)
-shadow_size = 0
-
-[sub_resource type="LabelSettings" id="LabelSettings_cqunm"]
-line_spacing = 0.0
-font = ExtResource("6_8yd1w")
-font_size = 50
-
-[sub_resource type="LabelSettings" id="LabelSettings_wwci0"]
-font_size = 30
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_q7wm5"]
 animations = [{
@@ -392,33 +352,73 @@ animations = [{
 "speed": 50.0
 }]
 
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_bvvnn"]
+blend_mode = 1
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xka8h"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("17_xg0gi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_35ekg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ne80p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_468kd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ujf8m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_xb80o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_cvfl3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_wjg35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_1m1k5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_f84qn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_74hga"]
+bg_color = Color(0.803922, 0.721569, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_082bn"]
+line_spacing = 35.0
+font = ExtResource("6_8yd1w")
+font_size = 35
+font_color = Color(0, 1, 0, 1)
+shadow_size = 0
+
+[sub_resource type="LabelSettings" id="LabelSettings_cqunm"]
+line_spacing = 0.0
+font = ExtResource("6_8yd1w")
+font_size = 50
+
+[sub_resource type="LabelSettings" id="LabelSettings_wwci0"]
+font_size = 30
+
 [node name="Panel" type="Node2D"]
 script = ExtResource("1_oqdju")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-z_index = -4
-position = Vector2(-53.3334, -30)
-scale = Vector2(1.05556, 1.05556)
-sprite_frames = SubResource("SpriteFrames_v7p67")
-autoplay = "default"
-centered = false
-metadata/_edit_lock_ = true
-
-[node name="Panneau" type="Sprite2D" parent="."]
-z_index = -1
-position = Vector2(960, 540)
-scale = Vector2(1.05691, 1.05828)
-texture = ExtResource("15_vkbx0")
-
-[node name="TV" parent="." instance=ExtResource("6_hjq2f")]
-position = Vector2(288, 112)
-scale = Vector2(0.337719, 0.337719)
-
-[node name="Timer" type="Timer" parent="."]
-wait_time = 90.9
-one_shot = true
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
 
 [node name="FadeRect" type="ColorRect" parent="."]
+visible = false
 z_index = 4096
 anchors_preset = 15
 anchor_right = 1.0
@@ -428,59 +428,79 @@ offset_bottom = 1080.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
 
-[node name="Camera2D" type="Camera2D" parent="."]
-anchor_mode = 0
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = -4
+position = Vector2(-30.2222, -17)
+scale = Vector2(1.03148, 1.03148)
+sprite_frames = SubResource("SpriteFrames_v7p67")
+autoplay = "default"
+centered = false
 
-[node name="Alert" type="Sprite2D" parent="."]
-position = Vector2(795.995, 49.7848)
-rotation = -3.16603
-scale = Vector2(0.0901653, 0.0897347)
-texture = ExtResource("17_rk03b")
+[node name="Panneau" type="Sprite2D" parent="."]
+position = Vector2(960, 540)
+scale = Vector2(1.03148, 1.03148)
+texture = ExtResource("15_ctu28")
+
+[node name="Explosion" type="AnimatedSprite2D" parent="."]
+z_index = 20
+position = Vector2(52.6337, 29)
+sprite_frames = SubResource("SpriteFrames_q7wm5")
+animation = &"Explosion"
+centered = false
+
+[node name="TV" parent="." instance=ExtResource("6_hjq2f")]
+position = Vector2(50, -17)
+scale = Vector2(1.19343, 1.19343)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 90.9
+one_shot = true
 
 [node name="AlertLight" type="AnimatedSprite2D" parent="."]
 modulate = Color(1, 0, 0, 0.392157)
 z_index = 100
 material = SubResource("CanvasItemMaterial_bvvnn")
-position = Vector2(791, 67)
+position = Vector2(490.999, 52.999)
 scale = Vector2(3.52734, 3.52734)
 sprite_frames = SubResource("SpriteFrames_xka8h")
 autoplay = "default"
 frame_progress = 0.557843
-metadata/_edit_lock_ = true
+
+[node name="Alert" type="Sprite2D" parent="."]
+position = Vector2(488.628, 46)
+rotation = -3.16603
+scale = Vector2(0.14567, 0.144975)
+texture = ExtResource("17_rk03b")
 
 [node name="TaskManager" type="Node" parent="."]
 script = ExtResource("2_g4bsj")
 
+[node name="JaugeFond" type="Sprite2D" parent="TaskManager"]
+z_index = 1
+position = Vector2(963.5, 233.5)
+texture = ExtResource("29_qyncq")
+
 [node name="ProgressBar" type="ProgressBar" parent="TaskManager"]
-anchors_preset = -1
-anchor_right = 0.859896
-anchor_bottom = 0.00925926
-offset_right = 269.0
-offset_bottom = 11.0
+z_index = 2
+offset_left = 904.0
+offset_top = 135.0
+offset_right = 964.0
+offset_bottom = 331.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_74hga")
+fill_mode = 3
 show_percentage = false
 metadata/_edit_use_anchors_ = true
 
-[node name="SliderBack3" type="Sprite2D" parent="TaskManager"]
-position = Vector2(238, 788)
-scale = Vector2(0.214, 0.214)
-texture = ExtResource("29_sj4mr")
-
-[node name="Slider3" parent="TaskManager" instance=ExtResource("4_1w408")]
-anchors_preset = -1
-anchor_left = -0.798437
-anchor_top = -0.0231481
-anchor_right = -0.798437
-anchor_bottom = 0.169444
-offset_left = 1742.0
-offset_top = 724.0
-offset_right = 2159.0
-offset_bottom = 2103.0
-scale = Vector2(0.12, 0.12)
+[node name="JaugeFront" type="Sprite2D" parent="TaskManager"]
+z_index = 3
+position = Vector2(963.5, 233.5)
+texture = ExtResource("30_l7ty0")
 
 [node name="SliderBack2" type="Sprite2D" parent="TaskManager"]
-position = Vector2(350, 788)
-scale = Vector2(0.214, 0.214)
+position = Vector2(395, 523)
+scale = Vector2(0.2, 0.2)
 texture = ExtResource("29_sj4mr")
 
 [node name="Slider2" parent="TaskManager" instance=ExtResource("4_1w408")]
@@ -489,15 +509,16 @@ anchor_left = -0.798437
 anchor_top = -0.0231481
 anchor_right = -0.798437
 anchor_bottom = 0.169444
-offset_left = 1854.0
-offset_top = 724.0
-offset_right = 2271.0
-offset_bottom = 2103.0
-scale = Vector2(0.12, 0.12)
+offset_left = 1902.0
+offset_top = 466.0
+offset_right = 2319.0
+offset_bottom = 1845.0
+scale = Vector2(0.11, 0.11)
+metadata/_edit_use_anchors_ = true
 
 [node name="SliderBack1" type="Sprite2D" parent="TaskManager"]
-position = Vector2(461, 788)
-scale = Vector2(0.214, 0.214)
+position = Vector2(486, 523)
+scale = Vector2(0.2, 0.2)
 texture = ExtResource("29_sj4mr")
 
 [node name="Slider1" parent="TaskManager" instance=ExtResource("4_1w408")]
@@ -506,214 +527,192 @@ anchor_left = -0.798437
 anchor_top = -0.0231481
 anchor_right = -0.798437
 anchor_bottom = 0.169444
-offset_left = 1965.0
-offset_top = 724.0
-offset_right = 2382.0
-offset_bottom = 2103.0
-scale = Vector2(0.12, 0.12)
+offset_left = 1993.0
+offset_top = 466.0
+offset_right = 2410.0
+offset_bottom = 1845.0
+scale = Vector2(0.11, 0.11)
+metadata/_edit_use_anchors_ = true
 
 [node name="Button1" parent="TaskManager" instance=ExtResource("1_4j8su")]
-offset_left = 1184.0
-offset_top = 698.0
-offset_right = 1253.0
-offset_bottom = 760.0
+offset_left = 1649.0
+offset_top = 447.0
+offset_right = 1718.0
+offset_bottom = 509.0
+scale = Vector2(1.45, 1.45)
 action_mode = 0
+icon = ExtResource("94_8sif2")
+icon_normal = ExtResource("94_8sif2")
+icon_pressed = ExtResource("94_8sif2")
+metadata/_edit_use_anchors_ = true
 
 [node name="Button2" parent="TaskManager" instance=ExtResource("1_4j8su")]
-offset_left = 1195.0
-offset_top = 765.0
-offset_right = 1264.0
-offset_bottom = 827.0
+offset_left = 1672.0
+offset_top = 530.0
+offset_right = 1741.0
+offset_bottom = 592.0
+scale = Vector2(1.45, 1.45)
 action_mode = 0
-
-[node name="Button3" parent="TaskManager" instance=ExtResource("1_4j8su")]
-offset_left = 1206.0
-offset_top = 834.0
-offset_right = 1275.0
-offset_bottom = 896.0
-action_mode = 0
-
-[node name="Button4" parent="TaskManager" instance=ExtResource("1_4j8su")]
-offset_left = 667.0
-offset_top = 703.0
-offset_right = 736.0
-offset_bottom = 765.0
-action_mode = 0
-
-[node name="Button5" parent="TaskManager" instance=ExtResource("1_4j8su")]
-offset_left = 657.0
-offset_top = 767.0
-offset_right = 726.0
-offset_bottom = 829.0
-action_mode = 0
-
-[node name="Button6" parent="TaskManager" instance=ExtResource("1_4j8su")]
-offset_left = 644.0
-offset_top = 834.0
-offset_right = 713.0
-offset_bottom = 896.0
-action_mode = 0
+icon = ExtResource("95_vo51c")
+icon_normal = ExtResource("95_vo51c")
+icon_pressed = ExtResource("95_vo51c")
+metadata/_edit_use_anchors_ = true
 
 [node name="OrderMinigame" parent="TaskManager" instance=ExtResource("8_swf1g")]
-position = Vector2(1413, 500)
-skew = -0.174533
+position = Vector2(1412, 491)
+scale = Vector2(0.73, 0.73)
 
 [node name="RadioMinigame" parent="TaskManager" instance=ExtResource("10_ldide")]
-position = Vector2(1304, 133)
-scale = Vector2(0.45, 0.45)
+position = Vector2(1288, 202)
+scale = Vector2(0.33, 0.33)
 
 [node name="CubePlacement" parent="TaskManager" instance=ExtResource("39_ngimo")]
-position = Vector2(1275, 543)
-scale = Vector2(0.32, 0.32)
+position = Vector2(1262, 776)
+scale = Vector2(0.5, 0.5)
+
+[node name="RotationMinigame" parent="TaskManager" instance=ExtResource("102_srneo")]
+position = Vector2(835, 663)
+
+[node name="CurveMinigame" parent="TaskManager" instance=ExtResource("101_s1wen")]
+position = Vector2(568, 485)
+scale = Vector2(0.69, 0.69)
+
+[node name="LabyrintheMinigame" parent="TaskManager" instance=ExtResource("103_cb54i")]
+position = Vector2(915.634, 769)
+scale = Vector2(0.35, 0.35)
+
+[node name="NitroSprite" type="Sprite2D" parent="TaskManager"]
+position = Vector2(392, 702)
+texture = ExtResource("104_l4er0")
+
+[node name="ButtonNitro" type="Button" parent="TaskManager"]
+anchors_preset = -1
+anchor_left = 0.0104167
+anchor_top = 0.0185185
+anchor_right = -0.0109375
+anchor_bottom = -0.0185185
+offset_left = 354.0
+offset_top = 621.0
+offset_right = 484.0
+offset_bottom = 749.0
+focus_mode = 0
+flat = true
+expand_icon = true
+script = ExtResource("105_nuyac")
+icon_pressed = ExtResource("102_auvl3")
+metadata/_edit_use_anchors_ = true
+
+[node name="Ventilateur" parent="TaskManager" instance=ExtResource("109_lenho")]
+z_index = 4
+position = Vector2(1780, 141)
 
 [node name="KeyPad" parent="TaskManager" instance=ExtResource("38_udp48")]
-position = Vector2(285, 545)
-scale = Vector2(0.27, 0.27)
+position = Vector2(180, 530)
+scale = Vector2(0.25, 0.25)
 
 [node name="ScoreLabel" type="Label" parent="."]
-offset_left = 680.0
-offset_top = 360.0
-offset_right = 752.0
-offset_bottom = 405.0
+offset_left = 732.634
+offset_top = 389.0
+offset_right = 804.634
+offset_bottom = 434.0
 label_settings = SubResource("LabelSettings_082bn")
 horizontal_alignment = 2
 vertical_alignment = 1
 autowrap_mode = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+z_index = 15
+position = Vector2(52.6337, 29)
 energy = 0.1
 blend_mode = 1
 
 [node name="ErrorCounter" parent="." instance=ExtResource("9_i3tvs")]
-position = Vector2(992, 293)
+z_index = 4
+position = Vector2(1129, 128)
+rotation = 3.14159
 scale = Vector2(0.3, 0.3)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(863, 331)
+position = Vector2(763, 327)
 scale = Vector2(0.24, 0.24)
 texture = ExtResource("35_bhaxy")
 flip_h = true
 
 [node name="TimerLabel" type="Label" parent="."]
 z_index = 7
-offset_left = 787.0
-offset_top = 348.0
-offset_right = 938.0
-offset_bottom = 413.0
+offset_left = 687.0
+offset_top = 344.0
+offset_right = 838.0
+offset_bottom = 409.0
 text = "11:11"
 label_settings = SubResource("LabelSettings_cqunm")
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="CafeAnimation" parent="." instance=ExtResource("36_mf1ra")]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(52.6337, 29)
 stream = ExtResource("40_jltsj")
 autoplay = true
 
-[node name="Label6" type="Label" parent="."]
-z_index = 2
-offset_left = 1278.0
-offset_top = 843.0
-offset_right = 1318.0
-offset_bottom = 885.0
-text = "3"
-label_settings = SubResource("LabelSettings_wwci0")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Label5" type="Label" parent="."]
-z_index = 2
-offset_left = 597.0
-offset_top = 842.0
-offset_right = 637.0
-offset_bottom = 884.0
-text = "6"
-label_settings = SubResource("LabelSettings_wwci0")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Label3" type="Label" parent="."]
-z_index = 2
-offset_left = 608.0
-offset_top = 783.0
-offset_right = 648.0
-offset_bottom = 825.0
-text = "5"
-label_settings = SubResource("LabelSettings_wwci0")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Label4" type="Label" parent="."]
-z_index = 2
-offset_left = 606.0
-offset_top = 708.0
-offset_right = 646.0
-offset_bottom = 750.0
-text = "4"
-label_settings = SubResource("LabelSettings_wwci0")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Label2" type="Label" parent="."]
-z_index = 2
-offset_left = 1271.0
-offset_top = 771.0
-offset_right = 1311.0
-offset_bottom = 813.0
-text = "2
-"
-label_settings = SubResource("LabelSettings_wwci0")
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Label7" type="Label" parent="."]
-z_index = 2
-offset_left = 214.0
-offset_top = 896.0
-offset_right = 254.0
-offset_bottom = 938.0
-text = "3"
-label_settings = SubResource("LabelSettings_wwci0")
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="EjectButton" parent="." instance=ExtResource("108_3r7v1")]
+position = Vector2(1834, 519)
+scale = Vector2(1.01, 1.01)
 
 [node name="Label8" type="Label" parent="."]
 z_index = 2
-offset_left = 327.0
-offset_top = 894.0
-offset_right = 367.0
-offset_bottom = 936.0
+offset_left = 373.0
+offset_top = 612.0
+offset_right = 413.0
+offset_bottom = 654.0
 text = "2
 "
 label_settings = SubResource("LabelSettings_wwci0")
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
 [node name="Label9" type="Label" parent="."]
 z_index = 2
-offset_left = 437.0
-offset_top = 889.0
-offset_right = 477.0
-offset_bottom = 931.0
+offset_left = 465.0
+offset_top = 613.0
+offset_right = 505.0
+offset_bottom = 655.0
 text = "1"
 label_settings = SubResource("LabelSettings_wwci0")
 horizontal_alignment = 1
 vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
 
-[node name="Label" type="Label" parent="."]
-z_index = 2
-offset_left = 1269.0
-offset_top = 696.0
-offset_right = 1309.0
-offset_bottom = 738.0
-text = "1"
-label_settings = SubResource("LabelSettings_wwci0")
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="Alternateur" type="Button" parent="."]
+offset_left = 273.0
+offset_top = 452.0
+offset_right = 367.0
+offset_bottom = 626.0
+scale = Vector2(0.9, 0.9)
+toggle_mode = true
+icon = ExtResource("110_prfby")
+flat = true
+expand_icon = true
+script = ExtResource("105_nuyac")
+icon_normal = ExtResource("110_prfby")
+icon_pressed = ExtResource("111_sotw8")
+metadata/_edit_use_anchors_ = true
 
-[node name="Explosion" type="AnimatedSprite2D" parent="."]
-z_index = 20
-sprite_frames = SubResource("SpriteFrames_q7wm5")
-animation = &"Explosion"
-centered = false
+[node name="Plasma" type="Button" parent="."]
+offset_left = 11.0
+offset_top = 452.0
+offset_right = 105.0
+offset_bottom = 626.0
+scale = Vector2(0.9, 0.9)
+toggle_mode = true
+icon = ExtResource("110_wh2ms")
+flat = true
+expand_icon = true
+script = ExtResource("105_nuyac")
+icon_normal = ExtResource("110_wh2ms")
+icon_pressed = ExtResource("111_l2f1m")
+metadata/_edit_use_anchors_ = true
