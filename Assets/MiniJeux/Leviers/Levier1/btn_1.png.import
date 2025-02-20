@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bm6t6y8wkv2ev"
-path="res://.godot/imported/Levier1_off.png-3cb29cdab46bed440debebc3a18a5f2f.ctex"
+uid="uid://dha2a3qnluft3"
+path="res://.godot/imported/btn_1.png-b6f1d65818731b5b7adf69de037502ce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/MiniJeux/Leviers/Levier1/Levier1_off.png"
-dest_files=["res://.godot/imported/Levier1_off.png-3cb29cdab46bed440debebc3a18a5f2f.ctex"]
+source_file="res://Assets/MiniJeux/Leviers/Levier1/btn_1.png"
+dest_files=["res://.godot/imported/btn_1.png-b6f1d65818731b5b7adf69de037502ce.ctex"]
 
 [params]
 

@@ -112,10 +112,10 @@
 [ext_resource type="Script" path="res://addons/MultiTouchGui/MultiTouchButton.gd" id="105_nuyac"]
 [ext_resource type="PackedScene" uid="uid://bhp7rwdkrgdbx" path="res://Scenes/Minigame/eject_button.tscn" id="108_3r7v1"]
 [ext_resource type="PackedScene" uid="uid://bk7ssxsrkdmvv" path="res://Scenes/Minigame/ventilateur.tscn" id="109_lenho"]
-[ext_resource type="Texture2D" uid="uid://bm6t6y8wkv2ev" path="res://Assets/MiniJeux/Leviers/Levier1/Levier1_off.png" id="110_prfby"]
-[ext_resource type="Texture2D" uid="uid://jv84olfme0bq" path="res://Assets/MiniJeux/Leviers/Levier2/Levier2_off.png" id="110_wh2ms"]
-[ext_resource type="Texture2D" uid="uid://mjlytut2c0s6" path="res://Assets/MiniJeux/Leviers/Levier2/Levier2_on.png" id="111_l2f1m"]
-[ext_resource type="Texture2D" uid="uid://dpsvq7ypr11of" path="res://Assets/MiniJeux/Leviers/Levier1/Levier1_on.png" id="111_sotw8"]
+[ext_resource type="Texture2D" uid="uid://dha2a3qnluft3" path="res://Assets/MiniJeux/Leviers/Levier1/btn_1.png" id="113_xpcab"]
+[ext_resource type="Texture2D" uid="uid://xy0hk0fmabt6" path="res://Assets/MiniJeux/Leviers/Levier1/btn_0 copie.png" id="114_8xqla"]
+[ext_resource type="Texture2D" uid="uid://ck4dbu65s8o1w" path="res://Assets/MiniJeux/Leviers/Levier2/btn_1.png" id="115_anwc2"]
+[ext_resource type="Texture2D" uid="uid://dsbmmy05thrv1" path="res://Assets/MiniJeux/Leviers/Levier2/btn_0 copie.png" id="116_pgyi6"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_v7p67"]
 animations = [{
@@ -578,6 +578,7 @@ position = Vector2(606, 499)
 scale = Vector2(0.5, 0.5)
 
 [node name="LabyrintheMinigame" parent="TaskManager" instance=ExtResource("103_cb54i")]
+visible = false
 position = Vector2(915.634, 769)
 scale = Vector2(0.35, 0.35)
 
@@ -591,10 +592,10 @@ anchor_left = -0.0109375
 anchor_top = -0.0185185
 anchor_right = -0.0109375
 anchor_bottom = -0.0185185
-offset_left = 354.0
-offset_top = 621.0
-offset_right = 484.0
-offset_bottom = 749.0
+offset_left = 371.0
+offset_top = 641.0
+offset_right = 501.0
+offset_bottom = 769.0
 focus_mode = 0
 flat = true
 expand_icon = true
@@ -693,13 +694,14 @@ offset_top = 452.0
 offset_right = 367.0
 offset_bottom = 626.0
 scale = Vector2(0.9, 0.9)
+focus_mode = 0
 toggle_mode = true
-icon = ExtResource("110_prfby")
+icon = ExtResource("113_xpcab")
 flat = true
 expand_icon = true
 script = ExtResource("105_nuyac")
-icon_normal = ExtResource("110_prfby")
-icon_pressed = ExtResource("111_sotw8")
+icon_normal = ExtResource("113_xpcab")
+icon_pressed = ExtResource("114_8xqla")
 metadata/_edit_use_anchors_ = true
 
 [node name="Plasma" type="Button" parent="."]
@@ -708,11 +710,12 @@ offset_top = 452.0
 offset_right = 105.0
 offset_bottom = 626.0
 scale = Vector2(0.9, 0.9)
+focus_mode = 0
 toggle_mode = true
-icon = ExtResource("110_wh2ms")
+icon = ExtResource("115_anwc2")
 flat = true
 expand_icon = true
 script = ExtResource("105_nuyac")
-icon_normal = ExtResource("110_wh2ms")
-icon_pressed = ExtResource("111_l2f1m")
+icon_normal = ExtResource("115_anwc2")
+icon_pressed = ExtResource("116_pgyi6")
 metadata/_edit_use_anchors_ = true

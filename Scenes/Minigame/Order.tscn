@@ -168,7 +168,6 @@ offset_right = 42.0
 offset_bottom = 50.0
 toggle_mode = true
 button_group = SubResource("ButtonGroup_t2ul5")
-icon = ExtResource("22_1al2y")
 flat = true
 script = ExtResource("1_tlnh6")
 icon_normal = ExtResource("22_1al2y")
