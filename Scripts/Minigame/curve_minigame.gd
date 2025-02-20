@@ -27,9 +27,9 @@ func _ready():
 	changeColorButton.pressed.connect(_on_color_button_pressed)
 
 	var main_game = get_node("/root/Panel/TaskManager")
-	#if main_game.signal_minigame_selected.is_connected(randomize_signal):
-		#main_game.signal_minigame_selected.disconnect(randomize_signal)
-	#main_game.signal_minigame_selected.connect(randomize_signal)
+	if main_game.signal_minigame_selected.is_connected(randomize_signal):
+		main_game.signal_minigame_selected.disconnect(randomize_signal)
+	main_game.signal_minigame_selected.connect(randomize_signal)
 	
 	validation_timer = Timer.new()
 	validation_timer.wait_time = validation_duration
