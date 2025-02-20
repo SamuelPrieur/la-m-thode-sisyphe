@@ -1,7 +1,6 @@
-[gd_scene load_steps=29 format=3 uid="uid://pnrwxqocbnb"]
+[gd_scene load_steps=28 format=3 uid="uid://pnrwxqocbnb"]
 
 [ext_resource type="Texture2D" uid="uid://b6jsiy5chmeu" path="res://Assets/Cafe/Composition 100.png" id="1_hjmho"]
-[ext_resource type="Texture2D" uid="uid://day3pxjchjpsr" path="res://Assets/Panel.png" id="1_tykdc"]
 [ext_resource type="Texture2D" uid="uid://btlwe1k6kyx0l" path="res://Assets/Cafe/Composition 102.png" id="2_51kwm"]
 [ext_resource type="Texture2D" uid="uid://bls2ka083jaxj" path="res://Assets/Cafe/Composition 104.png" id="3_uqmb8"]
 [ext_resource type="Texture2D" uid="uid://wgj2e2awikgj" path="res://Assets/Cafe/Composition 106.png" id="4_4mf21"]
@@ -144,13 +143,8 @@ libraries = {
 "": SubResource("AnimationLibrary_qtn1l")
 }
 
-[node name="Panneau" type="Sprite2D" parent="."]
-z_index = -1
-position = Vector2(960, 540)
-scale = Vector2(1.05691, 1.05828)
-texture = ExtResource("1_tykdc")
-
 [node name="Cafe" type="AnimatedSprite2D" parent="."]
+visible = false
 z_index = 10
 position = Vector2(216, 360)
 scale = Vector2(1.24, 1.24)
