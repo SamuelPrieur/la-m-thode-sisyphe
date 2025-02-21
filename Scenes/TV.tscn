@@ -35,9 +35,9 @@ texture = SubResource("GradientTexture2D_nooln")
 
 [node name="TaskDescription" type="Label" parent="."]
 z_index = 1
-offset_left = 14.0
+offset_left = 20.0
 offset_top = 101.0
-offset_right = 309.0
+offset_right = 303.0
 offset_bottom = 262.0
 text = "Appuyer sur le bouton hjdzihdz"
 label_settings = SubResource("LabelSettings_1mv0w")
