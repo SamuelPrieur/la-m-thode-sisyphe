@@ -132,13 +132,13 @@ func _process(delta):
 
 # ----------------------- Alarme : Réussite ----------------------- #
 
-func _on_task_completed(task_id: String):
+func _on_task_completed(_task_id: String):
 	score_label.text = str(Global.score)
 	audio_player_validate.play()
 	
 # ----------------------- Alarme : Raté ----------------------- #
 	
-func _on_task_failed(task_id: String):
+func _on_task_failed(_task_id: String):
 	audio_player_error.stream = error_audio1 if randi() % 2 == 0 else error_audio2
 
 	var task_manager = $TaskManager

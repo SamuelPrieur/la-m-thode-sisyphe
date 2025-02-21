@@ -54,3 +54,5 @@ func reset_game():
 	else:
 		# Ordre croissant pour allumer les moteurs
 		target_order = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# faire une nouvelle classe pour les boutons, et switch entre les deux états, au chargement de la tache en fonction de si le réacteur est allumé, changer le sprite de tout les boutons

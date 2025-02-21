@@ -65,7 +65,7 @@ func _on_left_radio_pressed():
 
 # ----------------------- Gestion : Modif des Hz ----------------------- #
 
-func _on_slider_value_changed(value: float):
+func _on_slider_value_changed(_value: float):
 	update_Hz()
 	check_frequency()
 

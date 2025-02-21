@@ -22,7 +22,7 @@ func _ready():
 	video_player.finished.connect(_on_video_finished)
 
 func _on_video_finished():
-	if Global.level == 5 :
+	if Global.level == 6 :
 		get_tree().change_scene_to_file("res://Scenes/Lose.tscn")
 	else : 
 		get_tree().change_scene_to_file("res://Scenes/Panel.tscn")

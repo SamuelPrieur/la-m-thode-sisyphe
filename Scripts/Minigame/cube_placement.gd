@@ -38,7 +38,7 @@ func _ready():
 
 # ----------------------- Chaque delta temps on appelle la fonction ----------------------- #
 
-func _process(delta):
+func _process(_delta):
 	check_if_centered()
 
 # ----------------------- Position aléatoire ----------------------- #
