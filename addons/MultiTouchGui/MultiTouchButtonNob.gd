@@ -17,23 +17,15 @@ func _ready():
 		icon = position_icons[current_icon_index]
 
 func _gui_input(event):
-	var event_pos_adjusted = event.position + global_position
-	var inside = event_pos_adjusted.x > position.x and event_pos_adjusted.y > position.y and event_pos_adjusted.x < position.x + size.x and event_pos_adjusted.y < position.y + size.y
-	
-	if event is InputEventScreenTouch and event.pressed and inside:
-		# Cycle entre les icônes
-		if position_icons.size() > 0:
-			current_icon_index = (current_icon_index + 1) % position_icons.size()
-			if position_icons[current_icon_index] != null:
-				icon = position_icons[current_icon_index]
-
-		if toggle_mode:
-			toggled.emit()
-			button_pressed = true
-		else:
-			pressed.emit()
-			button_down.emit()
-		
-	elif (event is InputEventScreenTouch and inside) or (event is InputEventScreenTouch and !event.pressed and !inside):
-		button_up.emit()
-		button_pressed = false
+	if event is InputEventScreenTouch:
+		if event.pressed:
+			if position_icons.size() > 0:
+				current_icon_index = (current_icon_index + 1) % position_icons.size()
+				if position_icons[current_icon_index] != null:
+					icon = position_icons[current_icon_index]
+			if not toggle_mode:
+				toggled.emit()
+				button_pressed = true
+			#else:
+				#pressed.emit()
+				#button_down.emit()
