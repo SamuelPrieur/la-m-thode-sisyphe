@@ -19,11 +19,12 @@ func _ready():
 func _gui_input(event):
 	if event is InputEventScreenTouch:
 		if event.pressed:
-			if position_icons.size() > 0:
-				current_icon_index = (current_icon_index + 1) % position_icons.size()
-				if position_icons[current_icon_index] != null:
-					icon = position_icons[current_icon_index]
+			
 			if not toggle_mode:
+				if position_icons.size() > 0:
+					current_icon_index = (current_icon_index + 1) % position_icons.size()
+					if position_icons[current_icon_index] != null:
+						icon = position_icons[current_icon_index]
 				toggled.emit()
 				button_pressed = true
 			#else:

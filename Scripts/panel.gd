@@ -5,7 +5,6 @@ extends Node2D
 @onready var error_label = $ErrorCounter
 @onready var minutes_label = $MinutesLabel 
 @onready var seconds_label = $SecondsLabel  
-@onready var timer_label = $TimerLabel
 @onready var timer = $Timer
 
 #Fondu au noir
