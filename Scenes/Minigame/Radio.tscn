@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://nx10dcdf7jbt" path="res://Assets/MiniJeux/Radio/button 2 off.png" id="3_ujk3i"]
 [ext_resource type="Texture2D" uid="uid://q6cbd1y1gmwt" path="res://Assets/MiniJeux/Radio/button 1 off.png" id="4_u8jbl"]
 [ext_resource type="Texture2D" uid="uid://y154mxu328vm" path="res://Assets/MiniJeux/Radio/cursor.png" id="5_26r1f"]
-[ext_resource type="FontFile" uid="uid://bvajmxv1r2504" path="res://Assets/Font/PPMondwest-Regular.otf" id="6_ny8u1"]
+[ext_resource type="FontFile" uid="uid://b0dbw7daavhnt" path="res://Assets/Font/OffBitTrial-101Bold.ttf" id="6_t7u1h"]
 
 [sub_resource type="ImageTexture" id="ImageTexture_2eq3b"]
 
@@ -14,8 +14,8 @@
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ojhat"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_j7uc6"]
-font = ExtResource("6_ny8u1")
-font_size = 40
+font = ExtResource("6_t7u1h")
+font_size = 47
 
 [node name="RadioMinigame" type="Node2D"]
 script = ExtResource("1_htqji")
@@ -71,10 +71,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="HzLabel" type="Label" parent="."]
 z_index = 2
-offset_left = 81.0
-offset_top = 303.0
-offset_right = 197.0
-offset_bottom = 345.0
+offset_left = 68.0
+offset_top = 301.0
+offset_right = 214.0
+offset_bottom = 353.0
 text = "600 Hz"
 label_settings = SubResource("LabelSettings_j7uc6")
 metadata/_edit_use_anchors_ = true

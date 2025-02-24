@@ -82,7 +82,6 @@ func ajouter_etape():
 func afficher_pattern():
 	_pattern_en_cours = true
 	user_index = 0
-	await get_tree().create_timer(1.0).timeout
 	for index in pattern:
 		await _flash_button(index)
 		await get_tree().create_timer(pattern_delay).timeout
@@ -91,7 +90,7 @@ func afficher_pattern():
 func _flash_button(btn_index) -> void:
 	var btn = color_buttons[btn_index]
 	btn.icon = btn.icon_pressed
-	await get_tree().create_timer(0.3).timeout
+	await get_tree().create_timer(0.5).timeout
 	btn.icon = btn.icon_normal
 
 func _on_ColorButton_pressed(btn_index):

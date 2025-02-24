@@ -85,21 +85,21 @@ func check_frequency():
 	var current_freq = hz_slider.value
 	var is_in_range = abs(current_freq - target_frequency) <= frequency_tolerance
 	
-	if is_in_range and !is_frequency_correct:
-		is_frequency_correct = true
-		validation_timer.start()
-		print("Timer Start :", validation_timer)
-	elif !is_in_range and is_frequency_correct:
-		is_frequency_correct = false
-		validation_timer.stop()
-		print("Timer Stop :", validation_timer)
+	if is_in_range:
+		if !is_frequency_correct:
+			is_frequency_correct = true
+		validation_timer.start()  
+	else:
+		if is_frequency_correct:
+			is_frequency_correct = false
+			validation_timer.stop()
+
 
 # ----------------------- Fin du timer et Validation du Mini Jeu ----------------------- #
 
 func _on_validation_timer_timeout():
 	if is_frequency_correct:
 		emit_signal("mini_game_completed", true)
-		print("Timer Fini :", validation_timer)
 
 # ----------------------- Reset du Mini jeu ----------------------- #
 

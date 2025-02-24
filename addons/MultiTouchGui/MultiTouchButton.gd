@@ -5,15 +5,12 @@ class_name MultiTouchButton
 func _ready():
 	if icon_normal and not icon:
 		icon = icon_normal
+		
 func _gui_input(event):
-	if event is InputEventScreenTouch:
-		if event.pressed:
-			icon = icon_pressed
-			if not toggle_mode:
-				toggled.emit()
-				button_pressed = true
-			#else:
-				#pressed.emit()
-				#button_down.emit()
-		else:
-			icon = icon_normal
+	if event is InputEventScreenTouch and event.pressed:
+		icon = icon_pressed
+		if not toggle_mode:
+			toggled.emit()
+			button_pressed = true
+	else:
+		icon = icon_normal

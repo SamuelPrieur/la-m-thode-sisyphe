@@ -33,10 +33,10 @@ var shake_timer = 0
 
 # Fiesta
 var light_energy = 0.1
-var disco_light_energy = 0.0
 var disco_light_hue = 0.0
-var disco_sprite_y = -200
 var fiesta = false
+var target_y = -200.0
+var default_y = 150.0  
 
 # Mini jeu ordre croissant
 @onready var order_minigame_scene = preload("res://Scenes/Minigame/Order.tscn")
@@ -66,12 +66,12 @@ var available_tasks = [
 	#{"id": "OrderMinigame", "description": "Appuyer sur les boutons dans l'ordre", "description_on": "Éteindre les réacteurs dans l'ordre", "description_off": "Allumez les réacteurs dans l'ordre", "button_node": "OrderMinigame", "time_allowed": "20"},
 	
 	# Radio
-	#{"id": "RadioMinigame", "description": "Mettez la radio sur la fréquence %d Hz", "button_node": "RadioMinigame", "possible_values": [300,375,450,525,600,675,750,825,900], "time_allowed": "20"},
+	{"id": "RadioMinigame", "description": "Mettez la radio sur la fréquence %d Hz", "button_node": "RadioMinigame", "possible_values": [300,375,450,525,600,675,750,825,900], "time_allowed": "20"},
 	
-	#KeyPad
+	# KeyPad
 	#{"id": "KeyPadMinigame", "description": "Entrez le code %s", "button_node": "KeyPad", "time_allowed": "20"},
 
-	#Cube
+	# Cube
 	#{"id": "CubePlacement", "description": "Recentrez le cube", "button_node": "CubePlacement", "time_allowed": "10"},
 
 	# Rotation
@@ -81,7 +81,7 @@ var available_tasks = [
 	#{"id": "Labyrinthe", "description": "Faire sortir le rat %d","niveau": ["du moteur","de l'alternateur","du pot d'échappement"], "button_node": "LabyrintheMinigame", "time_allowed": "30"},
 
 	# Signal
-	{"id": "Signal", "description": "Changer l'oscillation du signal sur ","signal": ["Mars","Lune","Brésil","Alpha","Tango","Quebec"], "button_node": "CurveMinigame", "time_allowed": "20"},
+	#{"id": "Signal", "description": "Changer l'oscillation du signal sur ","signal": ["Mars","Lune","Brésil","Alpha","Tango","Quebec"], "button_node": "CurveMinigame", "time_allowed": "20"},
 
 	# Simon
 	#{"id": "Simon", "description": "Jouer au Simon ","button_node": "Simon", "time_allowed": "20"}
@@ -266,27 +266,29 @@ func shake_screen(intensity: float, duration: float):
 		var offset_y = randf_range(-shake_intensity, shake_intensity)
 		camera.offset = Vector2(offset_x, offset_y)
 
-func _process(delta):
 
+
+func _process(delta):
 	if fiesta:
-		# Monter l'intensité de Ombre (DirectionalLight2D)
 		if $Ombre.energy < 0.5:
-			$Ombre.energy = min($Ombre.energy + delta * 0.2, 0.5)
+			$Ombre.energy = min($Ombre.energy + delta * 0.2, 0.8)
 		
-		# Monter l'énergie de BouleDiscoLight (PointLight2D ou OmniLight3D)
 		if $BouleDiscoLight.energy < 0.8:
-			$BouleDiscoLight.energy = min($BouleDiscoLight.energy + delta * 0.5, 0.8)
+			$BouleDiscoLight.energy = min($BouleDiscoLight.energy + delta * 0.5, 0.2)
 		
-		# Changer la couleur de BouleDiscoLight dans l'espace HSV
-		disco_light_hue += delta * 0.5  # Rotation des couleurs
+		disco_light_hue += delta * 0.5  
 		if disco_light_hue > 1.0:
-			disco_light_hue -= 1.0  # Revenir à 0 quand ça dépasse 1
+			disco_light_hue -= 1.0  
 		$BouleDiscoLight.energy = 0.1
 		$BouleDiscoLight.color = Color.from_hsv(disco_light_hue, 1, 1)
 
-		if $BouleDisco.position.y < 150:
-			$BouleDisco.position.y = min($BouleDisco.position.y + delta * 200, 150)
-		
+		$BouleDisco.position.y = lerp($BouleDisco.position.y, default_y, delta * 5)
+	else:
+		$Ombre.energy = lerp($Ombre.energy, 0.1, delta * 2)
+
+		$BouleDiscoLight.energy = lerp($BouleDiscoLight.energy, 0.0, delta * 3)
+
+		$BouleDisco.position.y = lerp($BouleDisco.position.y, target_y, delta * 5)
 
 
 	if shake_timer > 0:
@@ -447,21 +449,14 @@ func _on_simon_minigame_completed(success: bool):
 		
 		if success:
 			complete_current_task()
+			fiesta = false
 		else:
-			error_counter += 1
+			fiesta = false
 			task_failed.emit(current_task["id"])
-			start_random_task()
+			_on_task_timeout()
 	else:
 		if simon_minigame.mini_game_completed.is_connected(_on_simon_minigame_completed):
 			simon_minigame.mini_game_completed.disconnect(_on_simon_minigame_completed)
-
-func stop_fiesta():
-	# Réinitialiser les valeurs de la lumière et de la boule disco
-	fiesta = false
-	$Ombre.energy = 0.1  # Retour à une énergie faible
-	$BouleDiscoLight.energy = 0.1  # Retirer l'effet disco
-	$BouleDisco.position.y = -200
-	$BouleDiscoLight.color = Color.from_hsv(disco_light_hue, 1, 1)  # Réinitialiser la couleur
 
 
 # ----------------------- Condition : Mini jeu radio ----------------------- #
@@ -525,7 +520,6 @@ func _on_signal_minigame_completed(success: bool):
 
 func complete_current_task():
 	if current_task:
-		stop_fiesta()
 		task_timer.stop()
 		last_completed_task_id = current_task["id"]
 		Global.score += 1

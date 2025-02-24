@@ -801,7 +801,6 @@ shadow_size = 0
 line_spacing = 0.0
 font = ExtResource("209_ts1or")
 font_size = 50
-font_color = Color(0, 1, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_wwci0"]
 font_size = 30
