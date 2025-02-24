@@ -1,100 +1,192 @@
-[gd_scene load_steps=125 format=3 uid="uid://daxwxdsya5fvk"]
+[gd_scene load_steps=217 format=3 uid="uid://daxwxdsya5fvk"]
 
 [ext_resource type="PackedScene" uid="uid://v0fnarppwdp3" path="res://Scenes/Minigame/Button.tscn" id="1_4j8su"]
 [ext_resource type="Script" path="res://Scripts/panel.gd" id="1_oqdju"]
 [ext_resource type="Script" path="res://Scripts/task_manager.gd" id="2_g4bsj"]
+[ext_resource type="Texture2D" uid="uid://cleuv5r533ug4" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_100.png" id="2_rybk0"]
+[ext_resource type="Texture2D" uid="uid://ds6qxsj20koah" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_101.png" id="3_xq42p"]
 [ext_resource type="PackedScene" uid="uid://cq6qcb2l5duda" path="res://Scenes/Minigame/VerticalSlider.tscn" id="4_1w408"]
+[ext_resource type="Texture2D" uid="uid://cyf60gt4pohxq" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_102.png" id="4_etu26"]
+[ext_resource type="Texture2D" uid="uid://cuj451gic0326" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_103.png" id="5_6rcis"]
 [ext_resource type="FontFile" uid="uid://rjmbgq66tgvi" path="res://Assets/Font/OTBulbClassic-200.otf" id="6_8yd1w"]
+[ext_resource type="Texture2D" uid="uid://dsax8m3vcy1sc" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_104.png" id="6_dsmf5"]
 [ext_resource type="PackedScene" uid="uid://b2sp4q3o28mfs" path="res://Scenes/TV.tscn" id="6_hjq2f"]
+[ext_resource type="Texture2D" uid="uid://d4mq5my413spy" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_105.png" id="7_5602f"]
+[ext_resource type="Texture2D" uid="uid://bf1c1yrfgebgc" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_106.png" id="8_nuv4f"]
 [ext_resource type="PackedScene" uid="uid://17cf7ihimd4o" path="res://Scenes/Minigame/Order.tscn" id="8_swf1g"]
+[ext_resource type="Texture2D" uid="uid://dstjkndoysanv" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_107.png" id="9_3mw3m"]
 [ext_resource type="PackedScene" uid="uid://bjqhoi2yq7ui" path="res://Scenes/ErrorCounter.tscn" id="9_i3tvs"]
 [ext_resource type="PackedScene" uid="uid://doo45nhquufam" path="res://Scenes/Minigame/Radio.tscn" id="10_ldide"]
-[ext_resource type="Texture2D" uid="uid://b2q46woy6841c" path="res://Assets/Avion/Composition 1_00024.png" id="11_xs5tw"]
-[ext_resource type="Texture2D" uid="uid://cp2jmwmf1cbwq" path="res://Assets/Avion/Composition 1_00025.png" id="12_r0iny"]
-[ext_resource type="Texture2D" uid="uid://slwcopqs6jd3" path="res://Assets/Avion/Composition 1_00026.png" id="13_pito7"]
-[ext_resource type="Texture2D" uid="uid://dv0xg2gy3mnbb" path="res://Assets/Avion/Composition 1_00027.png" id="14_xpsvk"]
-[ext_resource type="Texture2D" uid="uid://ct5vbvorbfapd" path="res://Assets/cockpitFinal.png" id="15_ctu28"]
-[ext_resource type="Texture2D" uid="uid://bdcd42kfhaxue" path="res://Assets/Avion/Composition 1_00028.png" id="15_r75t5"]
-[ext_resource type="Texture2D" uid="uid://c3p77x3jcg2ht" path="res://Assets/Avion/Composition 1_00029.png" id="16_nr51j"]
-[ext_resource type="Texture2D" uid="uid://062tfmiudddt" path="res://Assets/Avion/Composition 1_00030.png" id="17_es17d"]
+[ext_resource type="Texture2D" uid="uid://dxhlqgxbuaevc" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_108.png" id="10_u2akt"]
+[ext_resource type="Texture2D" uid="uid://cbh0gh3jkmhhn" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_109.png" id="11_ptrat"]
+[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00024.png" id="11_xs5tw"]
+[ext_resource type="Texture2D" uid="uid://cekgf85x3igx8" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_110.png" id="12_0slis"]
+[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00025.png" id="12_r0iny"]
+[ext_resource type="Texture2D" uid="uid://7peti0b4fo5f" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_111.png" id="13_hpgjf"]
+[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00026.png" id="13_pito7"]
+[ext_resource type="Texture2D" uid="uid://bbktco5w8o574" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_112.png" id="14_u0u8v"]
+[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00027.png" id="14_xpsvk"]
+[ext_resource type="Texture2D" uid="uid://rq3vssjs5hnt" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_113.png" id="15_4r4ex"]
+[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00028.png" id="15_r75t5"]
+[ext_resource type="Texture2D" uid="uid://bfsnumu7ovokn" path="res://Assets/cockpit.png" id="15_tjmfp"]
+[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00029.png" id="16_nr51j"]
+[ext_resource type="Texture2D" uid="uid://dxoe8v01wvowe" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_114.png" id="16_w5cfa"]
+[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00030.png" id="17_es17d"]
+[ext_resource type="Texture2D" uid="uid://b6h3ldby8ye6i" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_115.png" id="17_ob0xu"]
 [ext_resource type="Texture2D" uid="uid://c4ys1oasngnef" path="res://Assets/Light/LightError.png" id="17_rk03b"]
 [ext_resource type="Texture2D" uid="uid://dcio18pe76hn" path="res://Assets/Light/Frames/1.png" id="17_xg0gi"]
+[ext_resource type="Texture2D" uid="uid://pbjhmfjph27v" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_116.png" id="18_3s6t2"]
 [ext_resource type="Texture2D" uid="uid://cf5larqg2ts1" path="res://Assets/Light/Frames/2.png" id="18_35ekg"]
-[ext_resource type="Texture2D" uid="uid://cyusle1fn5er6" path="res://Assets/Avion/Composition 1_00031.png" id="18_wk6p5"]
-[ext_resource type="Texture2D" uid="uid://b45xq37oqrnns" path="res://Assets/Avion/Composition 1_00032.png" id="19_0t50y"]
+[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00031.png" id="18_wk6p5"]
+[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00032.png" id="19_0t50y"]
 [ext_resource type="Texture2D" uid="uid://bh8plww38hfa5" path="res://Assets/Light/Frames/3.png" id="19_ne80p"]
+[ext_resource type="Texture2D" uid="uid://bsosgdukktuep" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_117.png" id="19_wepfx"]
 [ext_resource type="Texture2D" uid="uid://dr06hvwcm7jv0" path="res://Assets/Light/Frames/4.png" id="20_468kd"]
-[ext_resource type="Texture2D" uid="uid://bp0kb506bltx1" path="res://Assets/Avion/Composition 1_00033.png" id="20_mcwme"]
+[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00033.png" id="20_mcwme"]
+[ext_resource type="Texture2D" uid="uid://cam5w8pl4loyr" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_118.png" id="20_r0w56"]
+[ext_resource type="Texture2D" uid="uid://cmd3uj8n4qudf" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_119.png" id="21_e24kh"]
 [ext_resource type="Texture2D" uid="uid://c0564dt82fatv" path="res://Assets/Light/Frames/5.png" id="21_ujf8m"]
-[ext_resource type="Texture2D" uid="uid://2h04ghntli8e" path="res://Assets/Avion/Composition 1_00034.png" id="21_v3015"]
-[ext_resource type="Texture2D" uid="uid://dm0y1kt7bohj3" path="res://Assets/Avion/Composition 1_00035.png" id="22_wvwtu"]
+[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00034.png" id="21_v3015"]
+[ext_resource type="Texture2D" uid="uid://iauwrreq7s76" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_120.png" id="22_7cuif"]
+[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00035.png" id="22_wvwtu"]
 [ext_resource type="Texture2D" uid="uid://cjlcrrnbkpgx3" path="res://Assets/Light/Frames/6.png" id="22_xb80o"]
 [ext_resource type="Texture2D" uid="uid://chfm5i1b1ot3c" path="res://Assets/Light/Frames/7.png" id="23_cvfl3"]
-[ext_resource type="Texture2D" uid="uid://01r3c8pjt4gv" path="res://Assets/Avion/Composition 1_00036.png" id="23_nq0fk"]
+[ext_resource type="Texture2D" uid="uid://c5ii4sali58bc" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_121.png" id="23_m2k5e"]
+[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00036.png" id="23_nq0fk"]
+[ext_resource type="Texture2D" uid="uid://olbtwankauf7" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_122.png" id="24_udo4f"]
 [ext_resource type="Texture2D" uid="uid://dbbi4pvnwhamw" path="res://Assets/Light/Frames/8.png" id="24_wjg35"]
 [ext_resource type="Texture2D" uid="uid://2jo8bpssxyff" path="res://Assets/Light/Frames/9.png" id="25_1m1k5"]
+[ext_resource type="Texture2D" uid="uid://dehygk5yve2gs" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_123.png" id="25_au54n"]
 [ext_resource type="Texture2D" uid="uid://dt8qie1ylls6r" path="res://Assets/Light/Frames/10.png" id="26_f84qn"]
+[ext_resource type="Texture2D" uid="uid://c8b40do4dahcw" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_124.png" id="26_y207h"]
+[ext_resource type="Texture2D" uid="uid://c12ytny5e7fo6" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_125.png" id="27_7gqkv"]
+[ext_resource type="Texture2D" uid="uid://bv5fpyubqnd3a" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_126.png" id="28_18r8b"]
+[ext_resource type="Texture2D" uid="uid://d4fgobxqiifxu" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_127.png" id="29_bqoy2"]
 [ext_resource type="Texture2D" uid="uid://buvgrxbk8tdos" path="res://Assets/Jauge/jauge_bg.png" id="29_qyncq"]
 [ext_resource type="Texture2D" uid="uid://dxbh7lolovkvv" path="res://Assets/MiniJeux/Slider/slider 2.png" id="29_sj4mr"]
+[ext_resource type="Texture2D" uid="uid://bqtby5s1es401" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_128.png" id="30_cnrdm"]
 [ext_resource type="Texture2D" uid="uid://o7iw065kohrl" path="res://Assets/Jauge/jauge_vitre.png" id="30_l7ty0"]
+[ext_resource type="Texture2D" uid="uid://bx2po5y6c42n8" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_129.png" id="31_8phbx"]
+[ext_resource type="Texture2D" uid="uid://dvu4anmfjc7nj" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_130.png" id="32_g7fki"]
+[ext_resource type="Texture2D" uid="uid://cg0086xp0l710" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_131.png" id="33_0uhq1"]
+[ext_resource type="Texture2D" uid="uid://b1335s37kahm7" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_132.png" id="34_57r17"]
 [ext_resource type="Texture2D" uid="uid://itjay38h6muj" path="res://Assets/timer.png" id="35_bhaxy"]
+[ext_resource type="Texture2D" uid="uid://8dpu7nqgrey0" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_133.png" id="35_kmkl7"]
 [ext_resource type="PackedScene" uid="uid://pnrwxqocbnb" path="res://Scenes/cafe.tscn" id="36_mf1ra"]
+[ext_resource type="Texture2D" uid="uid://bbsce37iuafxs" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_134.png" id="36_ysvch"]
+[ext_resource type="Texture2D" uid="uid://cio7uavtig8s" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_135.png" id="37_g313d"]
 [ext_resource type="PackedScene" uid="uid://0klunj0c1ti" path="res://Scenes/Minigame/KeyPad.tscn" id="38_udp48"]
+[ext_resource type="Texture2D" uid="uid://1gwdtfoh44vl" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_136.png" id="38_xe8nt"]
+[ext_resource type="Texture2D" uid="uid://brjw6puvajxhy" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_137.png" id="39_3ucmy"]
 [ext_resource type="PackedScene" uid="uid://p48jwya14kf0" path="res://Scenes/Minigame/CubePlacement.tscn" id="39_ngimo"]
 [ext_resource type="AudioStream" uid="uid://n2usvqw832v3" path="res://Assets/Audio/Ambiant/AmbiencePlane.wav" id="40_jltsj"]
+[ext_resource type="Texture2D" uid="uid://bmvl5clggs8m8" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_138.png" id="40_v5of4"]
 [ext_resource type="Texture2D" uid="uid://pjvcwrdeuv81" path="res://Assets/Explosion/explosion_00001.png" id="41_60gob"]
+[ext_resource type="Texture2D" uid="uid://nyibipbvd6td" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_139.png" id="41_824q8"]
 [ext_resource type="Texture2D" uid="uid://e2h8kj8arf5f" path="res://Assets/Explosion/Image vide 704x396.png" id="41_igh86"]
+[ext_resource type="Texture2D" uid="uid://dfjwsj3q264ev" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_140.png" id="42_gesex"]
 [ext_resource type="Texture2D" uid="uid://mjg83cdcr81q" path="res://Assets/Explosion/explosion_00002.png" id="42_jy5lh"]
+[ext_resource type="Texture2D" uid="uid://d2tc04kc157e6" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_141.png" id="43_6w6sx"]
 [ext_resource type="Texture2D" uid="uid://lpnxy5hvk30c" path="res://Assets/Explosion/explosion_00003.png" id="43_p6n4t"]
 [ext_resource type="Texture2D" uid="uid://c2bvtvacc13o4" path="res://Assets/Explosion/explosion_00004.png" id="44_i4xbm"]
+[ext_resource type="Texture2D" uid="uid://b5uqoiimhxhbd" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_142.png" id="44_mflwy"]
 [ext_resource type="Texture2D" uid="uid://dg0wgm86hqh1h" path="res://Assets/Explosion/explosion_00005.png" id="45_1baj8"]
+[ext_resource type="Texture2D" uid="uid://byhjhrbi6spmc" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_143.png" id="45_4afcj"]
 [ext_resource type="Texture2D" uid="uid://53lc8xyfb4es" path="res://Assets/Explosion/explosion_00006.png" id="46_hpvp6"]
+[ext_resource type="Texture2D" uid="uid://c1jfu58pq5qn5" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_144.png" id="46_ouq65"]
 [ext_resource type="Texture2D" uid="uid://ys3sjdehoode" path="res://Assets/Explosion/explosion_00007.png" id="47_2qh3m"]
+[ext_resource type="Texture2D" uid="uid://kre85bnhr82u" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_145.png" id="47_tg81a"]
 [ext_resource type="Texture2D" uid="uid://btxvaot3fy31t" path="res://Assets/Explosion/explosion_00008.png" id="48_qjbt5"]
+[ext_resource type="Texture2D" uid="uid://bwko8e5qymmij" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_146.png" id="48_x4h6y"]
 [ext_resource type="Texture2D" uid="uid://dvc65ydsv2l4y" path="res://Assets/Explosion/explosion_00009.png" id="49_i6tws"]
+[ext_resource type="Texture2D" uid="uid://orxu62mnh8h4" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_147.png" id="49_n23yr"]
 [ext_resource type="Texture2D" uid="uid://bpm1q61f3mv0d" path="res://Assets/Explosion/explosion_00010.png" id="50_0uc8i"]
+[ext_resource type="Texture2D" uid="uid://bytv21mnjyodf" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_148.png" id="50_orqq5"]
 [ext_resource type="Texture2D" uid="uid://dpc7crctn2cga" path="res://Assets/Explosion/explosion_00011.png" id="51_s366e"]
+[ext_resource type="Texture2D" uid="uid://c10ciy8ak7si5" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_149.png" id="51_txs2v"]
 [ext_resource type="Texture2D" uid="uid://cexv84ot8c7cb" path="res://Assets/Explosion/explosion_00012.png" id="52_fxre4"]
+[ext_resource type="Texture2D" uid="uid://ch0tpmfr354ib" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_150.png" id="52_onfkb"]
+[ext_resource type="Texture2D" uid="uid://cdf0jk10e6bf5" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_151.png" id="53_ck1f7"]
 [ext_resource type="Texture2D" uid="uid://bqjgrlgwmeg7j" path="res://Assets/Explosion/explosion_00013.png" id="53_whbr6"]
+[ext_resource type="Texture2D" uid="uid://dubadtrpjwpdr" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_152.png" id="54_8gs0o"]
 [ext_resource type="Texture2D" uid="uid://nltjvgph4djv" path="res://Assets/Explosion/explosion_00014.png" id="54_ovsox"]
 [ext_resource type="Texture2D" uid="uid://7qxohb086p6e" path="res://Assets/Explosion/explosion_00015.png" id="55_bshj3"]
+[ext_resource type="Texture2D" uid="uid://b5a785nkl7vq5" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_153.png" id="55_okg6f"]
 [ext_resource type="Texture2D" uid="uid://bibimui57ikl5" path="res://Assets/Explosion/explosion_00016.png" id="56_anp5n"]
+[ext_resource type="Texture2D" uid="uid://btl2jnx5c2i4r" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_154.png" id="56_f2vm6"]
 [ext_resource type="Texture2D" uid="uid://ducfpcnqhrt1r" path="res://Assets/Explosion/explosion_00017.png" id="57_3uks5"]
+[ext_resource type="Texture2D" uid="uid://dj1qwylgkmh84" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_155.png" id="57_tmcme"]
 [ext_resource type="Texture2D" uid="uid://lx7blf7vncv2" path="res://Assets/Explosion/explosion_00018.png" id="58_sq48v"]
+[ext_resource type="Texture2D" uid="uid://vb6m652txv1a" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_156.png" id="58_sqlrx"]
 [ext_resource type="Texture2D" uid="uid://7ah36ii8uvej" path="res://Assets/Explosion/explosion_00019.png" id="59_jghhq"]
+[ext_resource type="Texture2D" uid="uid://bog0vq8vho3c" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_157.png" id="59_odkih"]
 [ext_resource type="Texture2D" uid="uid://cwqvbg4e8h8vw" path="res://Assets/Explosion/explosion_00020.png" id="60_3p1dm"]
+[ext_resource type="Texture2D" uid="uid://b1rkub1cfon0b" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_158.png" id="60_n8hv8"]
 [ext_resource type="Texture2D" uid="uid://co77ybdtkdld" path="res://Assets/Explosion/explosion_00021.png" id="61_va8o2"]
+[ext_resource type="Texture2D" uid="uid://cnb7ywxp1isxb" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_159.png" id="61_vg1ky"]
 [ext_resource type="Texture2D" uid="uid://d4bml874vckrb" path="res://Assets/Explosion/explosion_00022.png" id="62_gl621"]
+[ext_resource type="Texture2D" uid="uid://b31bnortd2s7a" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_160.png" id="62_rk87g"]
+[ext_resource type="Texture2D" uid="uid://b8kwhsf732m7" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_161.png" id="63_2jnio"]
 [ext_resource type="Texture2D" uid="uid://ctfxnkdfp6ppn" path="res://Assets/Explosion/explosion_00023.png" id="63_n6ljd"]
+[ext_resource type="Texture2D" uid="uid://qbytjfxsga2n" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_162.png" id="64_4locg"]
 [ext_resource type="Texture2D" uid="uid://c5glj7ef2sl0f" path="res://Assets/Explosion/explosion_00024.png" id="64_arf4g"]
+[ext_resource type="Texture2D" uid="uid://1j6td0xjr6yk" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_163.png" id="65_34234"]
 [ext_resource type="Texture2D" uid="uid://vghny1qdgp8k" path="res://Assets/Explosion/explosion_00025.png" id="65_xg8w3"]
+[ext_resource type="Texture2D" uid="uid://cgntpi05trav6" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_164.png" id="66_0oo7m"]
 [ext_resource type="Texture2D" uid="uid://cp2sw1lanfsc8" path="res://Assets/Explosion/explosion_00026.png" id="66_ko4sm"]
 [ext_resource type="Texture2D" uid="uid://btw32hdf3ihg" path="res://Assets/Explosion/explosion_00027.png" id="67_2qwh2"]
+[ext_resource type="Texture2D" uid="uid://bjmd2tbq4osew" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_165.png" id="67_j3shj"]
 [ext_resource type="Texture2D" uid="uid://br50kunyfrlj3" path="res://Assets/Explosion/explosion_00028.png" id="68_fjblp"]
+[ext_resource type="Texture2D" uid="uid://btsxbk5p4alph" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_166.png" id="68_ub51b"]
+[ext_resource type="Texture2D" uid="uid://d3ar116dmkvtf" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_167.png" id="69_agikm"]
 [ext_resource type="Texture2D" uid="uid://ddlw4hd3f7jcn" path="res://Assets/Explosion/explosion_00029.png" id="69_krf5n"]
 [ext_resource type="Texture2D" uid="uid://darb7lqmkevxj" path="res://Assets/Explosion/explosion_00030.png" id="70_362sq"]
+[ext_resource type="Texture2D" uid="uid://tfgbs6vawc4e" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_168.png" id="70_yq0vx"]
+[ext_resource type="Texture2D" uid="uid://cfv54duybhxdw" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_169.png" id="71_72ivy"]
 [ext_resource type="Texture2D" uid="uid://dvpywbot2tg20" path="res://Assets/Explosion/explosion_00031.png" id="71_qql3f"]
 [ext_resource type="Texture2D" uid="uid://jfot6v1wp1sm" path="res://Assets/Explosion/explosion_00032.png" id="72_5qo3d"]
+[ext_resource type="Texture2D" uid="uid://cb30lxupaxcy2" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_170.png" id="72_lgebe"]
 [ext_resource type="Texture2D" uid="uid://cyvv73w6rkw1a" path="res://Assets/Explosion/explosion_00033.png" id="73_c6mxv"]
+[ext_resource type="Texture2D" uid="uid://dhguf7ewvn2wr" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_171.png" id="73_hl4lr"]
 [ext_resource type="Texture2D" uid="uid://2qtmbgy4old1" path="res://Assets/Explosion/explosion_00034.png" id="74_1yikx"]
+[ext_resource type="Texture2D" uid="uid://65poi2osut22" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_172.png" id="74_r622q"]
+[ext_resource type="Texture2D" uid="uid://bt54uwxsqnieh" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_173.png" id="75_1b8q0"]
 [ext_resource type="Texture2D" uid="uid://csv03w628x6su" path="res://Assets/Explosion/explosion_00035.png" id="75_j7ut0"]
+[ext_resource type="Texture2D" uid="uid://did2iaeswq7uj" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_174.png" id="76_3cxuk"]
 [ext_resource type="Texture2D" uid="uid://bxpxoq0l7dtid" path="res://Assets/Explosion/explosion_00036.png" id="76_uh5pl"]
 [ext_resource type="Texture2D" uid="uid://d2wfrep6qfxjw" path="res://Assets/Explosion/explosion_00037.png" id="77_fj2bu"]
+[ext_resource type="Texture2D" uid="uid://dgmutjuoupu4a" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_175.png" id="77_kgtug"]
 [ext_resource type="Texture2D" uid="uid://b1vrf0fg8348l" path="res://Assets/Explosion/explosion_00038.png" id="78_6t0r1"]
+[ext_resource type="Texture2D" uid="uid://djml75smtjfb7" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_176.png" id="78_kjxg2"]
 [ext_resource type="Texture2D" uid="uid://dqgfadg7ed4f5" path="res://Assets/Explosion/explosion_00039.png" id="79_4n3jw"]
+[ext_resource type="Texture2D" uid="uid://dar2jsj8mokoa" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_177.png" id="79_kh7lx"]
 [ext_resource type="Texture2D" uid="uid://xepxuhluwp0b" path="res://Assets/Explosion/explosion_00040.png" id="80_b4xjr"]
+[ext_resource type="Texture2D" uid="uid://caode2wncb8xd" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_178.png" id="80_h3w0x"]
+[ext_resource type="Texture2D" uid="uid://bvf05juntyk8i" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_179.png" id="81_73oeo"]
 [ext_resource type="Texture2D" uid="uid://yfa5o4pv1rh6" path="res://Assets/Explosion/explosion_00041.png" id="81_iqd2j"]
+[ext_resource type="Texture2D" uid="uid://c2t7qnkbbk4ma" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_180.png" id="82_0yeiy"]
 [ext_resource type="Texture2D" uid="uid://bvdgvp3na5p37" path="res://Assets/Explosion/explosion_00042.png" id="82_1uvhs"]
 [ext_resource type="Texture2D" uid="uid://dsn70gx13t7ya" path="res://Assets/Explosion/explosion_00043.png" id="83_60w7q"]
+[ext_resource type="Texture2D" uid="uid://dydbe58y7s3p5" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_181.png" id="83_h8nfb"]
+[ext_resource type="Texture2D" uid="uid://bx7fvpmji73tw" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_182.png" id="84_mgpba"]
 [ext_resource type="Texture2D" uid="uid://7ne25j77aq56" path="res://Assets/Explosion/explosion_00044.png" id="84_wfguj"]
 [ext_resource type="Texture2D" uid="uid://dm3ki1tnl7cs5" path="res://Assets/Explosion/explosion_00045.png" id="85_5xboc"]
+[ext_resource type="Texture2D" uid="uid://27xmhi0t6egj" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_183.png" id="85_h4vof"]
 [ext_resource type="Texture2D" uid="uid://l1wra6742kgi" path="res://Assets/Explosion/explosion_00046.png" id="86_bcq60"]
+[ext_resource type="Texture2D" uid="uid://bgsrgjssibl46" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_184.png" id="86_vt768"]
 [ext_resource type="Texture2D" uid="uid://bx6qggii7eeqd" path="res://Assets/Explosion/explosion_00047.png" id="87_6s68m"]
+[ext_resource type="Texture2D" uid="uid://hu2ryvjfoskb" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_185.png" id="87_y7go8"]
 [ext_resource type="Texture2D" uid="uid://swffqtu04mdw" path="res://Assets/Explosion/explosion_00048.png" id="88_4bbp4"]
+[ext_resource type="Texture2D" uid="uid://dd3uesvkod4c0" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_186.png" id="88_pjngi"]
+[ext_resource type="Texture2D" uid="uid://bu1x6870c8wvo" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_187.png" id="89_c4og0"]
 [ext_resource type="Texture2D" uid="uid://dq55xwbhc1lkk" path="res://Assets/Explosion/explosion_00049.png" id="89_twduh"]
+[ext_resource type="Texture2D" uid="uid://dxf68p56k3ed0" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_188.png" id="90_8yx86"]
 [ext_resource type="Texture2D" uid="uid://b4yi6iuss3d62" path="res://Assets/Explosion/explosion_00050.png" id="90_sekr5"]
 [ext_resource type="Texture2D" uid="uid://c8ao2ly8eocca" path="res://Assets/Explosion/explosion_00051.png" id="91_hybvp"]
+[ext_resource type="Texture2D" uid="uid://rkvgkqwrg28j" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_189.png" id="91_nkku2"]
+[ext_resource type="Texture2D" uid="uid://f0msuwtt7t2i" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_190.png" id="92_def4y"]
 [ext_resource type="Texture2D" uid="uid://b3v4pdpafvaix" path="res://Assets/Explosion/explosion_00052.png" id="92_f8liy"]
+[ext_resource type="Texture2D" uid="uid://bieda4cj86k8u" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_191.png" id="93_8yvgr"]
 [ext_resource type="Texture2D" uid="uid://bjg7fhpbmh7su" path="res://Assets/Explosion/explosion_00053.png" id="93_qyujm"]
 [ext_resource type="Texture2D" uid="uid://cdcxic6ec7blr" path="res://Assets/MiniJeux/Vitesse/VitesseButtonUp.png" id="94_8sif2"]
 [ext_resource type="Texture2D" uid="uid://d1ibysn8xa6gc" path="res://Assets/Explosion/explosion_00054.png" id="94_q5lu5"]
@@ -105,7 +197,6 @@
 [ext_resource type="Texture2D" uid="uid://ea7p1orf2j31" path="res://Assets/Explosion/explosion_00058.png" id="98_rxp81"]
 [ext_resource type="Texture2D" uid="uid://duw5d0lk1kes5" path="res://Assets/Explosion/explosion_00059.png" id="99_epld3"]
 [ext_resource type="PackedScene" uid="uid://djgknxy2afku4" path="res://Scenes/Minigame/curve_minigame.tscn" id="101_s1wen"]
-[ext_resource type="Texture2D" uid="uid://dicohot5qhrol" path="res://Assets/MiniJeux/Nitro/bouton on nitro.png" id="102_auvl3"]
 [ext_resource type="PackedScene" uid="uid://b1boh8yiojwfm" path="res://Scenes/Minigame/rotation_minigame.tscn" id="102_srneo"]
 [ext_resource type="PackedScene" uid="uid://bn0w56kkgq58e" path="res://Scenes/Minigame/labyrinthe_minigame.tscn" id="103_cb54i"]
 [ext_resource type="Texture2D" uid="uid://p2tjee2namff" path="res://Assets/MiniJeux/Nitro/nos.png" id="104_l4er0"]
@@ -116,9 +207,291 @@
 [ext_resource type="Texture2D" uid="uid://xy0hk0fmabt6" path="res://Assets/MiniJeux/Leviers/Levier1/btn_0 copie.png" id="114_8xqla"]
 [ext_resource type="Texture2D" uid="uid://ck4dbu65s8o1w" path="res://Assets/MiniJeux/Leviers/Levier2/btn_1.png" id="115_anwc2"]
 [ext_resource type="Texture2D" uid="uid://dsbmmy05thrv1" path="res://Assets/MiniJeux/Leviers/Levier2/btn_0 copie.png" id="116_pgyi6"]
+[ext_resource type="PackedScene" uid="uid://dexh2ov8nsr7d" path="res://Scenes/Minigame/simon.tscn" id="206_i1the"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_v7p67"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_rybk0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xq42p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_etu26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_6rcis")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dsmf5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5602f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_nuv4f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_3mw3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_u2akt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ptrat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_0slis")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_hpgjf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_u0u8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_4r4ex")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_w5cfa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ob0xu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_3s6t2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_wepfx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_r0w56")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_e24kh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_7cuif")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_m2k5e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_udo4f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_au54n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_y207h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_7gqkv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_18r8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_bqoy2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_cnrdm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_8phbx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_g7fki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_0uhq1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_57r17")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_kmkl7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_ysvch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_g313d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_xe8nt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_3ucmy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_v5of4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_824q8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_gesex")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_6w6sx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_mflwy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_4afcj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_ouq65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_tg81a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_x4h6y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_n23yr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_orqq5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_txs2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_onfkb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_ck1f7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_8gs0o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_okg6f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_f2vm6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_tmcme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_sqlrx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_odkih")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_n8hv8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_vg1ky")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_rk87g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_2jnio")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_4locg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_34234")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_0oo7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_j3shj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_ub51b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_agikm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_yq0vx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_72ivy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_lgebe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_hl4lr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_r622q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_1b8q0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_3cxuk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_kgtug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_kjxg2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_kh7lx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_h3w0x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_73oeo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_0yeiy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_h8nfb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_mgpba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_h4vof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_vt768")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_y7go8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_pjngi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_c4og0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_8yx86")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_nkku2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_def4y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_8yvgr")
+}],
+"loop": true,
+"name": &"Nuages",
+"speed": 25.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("11_xs5tw")
@@ -160,7 +533,7 @@ animations = [{
 "texture": ExtResource("23_nq0fk")
 }],
 "loop": true,
-"name": &"default",
+"name": &"Space",
 "speed": 25.0
 }]
 
@@ -435,13 +808,15 @@ z_index = -4
 position = Vector2(-30.2222, -17)
 scale = Vector2(1.03148, 1.03148)
 sprite_frames = SubResource("SpriteFrames_v7p67")
-autoplay = "default"
+animation = &"Nuages"
+autoplay = "Nuages"
+frame_progress = 0.4389
 centered = false
 
 [node name="Panneau" type="Sprite2D" parent="."]
 position = Vector2(960, 540)
 scale = Vector2(1.03148, 1.03148)
-texture = ExtResource("15_ctu28")
+texture = ExtResource("15_tjmfp")
 
 [node name="Explosion" type="AnimatedSprite2D" parent="."]
 z_index = 20
@@ -462,14 +837,14 @@ one_shot = true
 modulate = Color(1, 0, 0, 0.392157)
 z_index = 100
 material = SubResource("CanvasItemMaterial_bvvnn")
-position = Vector2(490.999, 52.999)
+position = Vector2(1414, 52.999)
 scale = Vector2(3.52734, 3.52734)
 sprite_frames = SubResource("SpriteFrames_xka8h")
 autoplay = "default"
 frame_progress = 0.557843
 
 [node name="Alert" type="Sprite2D" parent="."]
-position = Vector2(488.628, 46)
+position = Vector2(1411.63, 46)
 rotation = -3.16603
 scale = Vector2(0.14567, 0.144975)
 texture = ExtResource("17_rk03b")
@@ -634,12 +1009,15 @@ focus_mode = 0
 flat = true
 expand_icon = true
 script = ExtResource("105_nuyac")
-icon_pressed = ExtResource("102_auvl3")
 metadata/_edit_use_anchors_ = true
 
 [node name="Ventilateur" parent="TaskManager" instance=ExtResource("109_lenho")]
 z_index = 4
 position = Vector2(1780, 141)
+
+[node name="Simon" parent="TaskManager" instance=ExtResource("206_i1the")]
+position = Vector2(495, 691)
+scale = Vector2(1.26, 1.26)
 
 [node name="KeyPad" parent="TaskManager" instance=ExtResource("38_udp48")]
 position = Vector2(180, 530)
