@@ -1,4 +1,4 @@
-[gd_scene load_steps=217 format=3 uid="uid://daxwxdsya5fvk"]
+[gd_scene load_steps=222 format=3 uid="uid://daxwxdsya5fvk"]
 
 [ext_resource type="PackedScene" uid="uid://v0fnarppwdp3" path="res://Scenes/Minigame/Button.tscn" id="1_4j8su"]
 [ext_resource type="Script" path="res://Scripts/panel.gd" id="1_oqdju"]
@@ -19,40 +19,40 @@
 [ext_resource type="PackedScene" uid="uid://doo45nhquufam" path="res://Scenes/Minigame/Radio.tscn" id="10_ldide"]
 [ext_resource type="Texture2D" uid="uid://dxhlqgxbuaevc" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_108.png" id="10_u2akt"]
 [ext_resource type="Texture2D" uid="uid://cbh0gh3jkmhhn" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_109.png" id="11_ptrat"]
-[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00024.png" id="11_xs5tw"]
+[ext_resource type="Texture2D" uid="uid://b2q46woy6841c" path="res://Assets/Ext_Cockpit/Space/Composition 1_00024.png" id="11_xs5tw"]
 [ext_resource type="Texture2D" uid="uid://cekgf85x3igx8" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_110.png" id="12_0slis"]
-[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00025.png" id="12_r0iny"]
+[ext_resource type="Texture2D" uid="uid://cp2jmwmf1cbwq" path="res://Assets/Ext_Cockpit/Space/Composition 1_00025.png" id="12_r0iny"]
 [ext_resource type="Texture2D" uid="uid://7peti0b4fo5f" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_111.png" id="13_hpgjf"]
-[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00026.png" id="13_pito7"]
+[ext_resource type="Texture2D" uid="uid://slwcopqs6jd3" path="res://Assets/Ext_Cockpit/Space/Composition 1_00026.png" id="13_pito7"]
 [ext_resource type="Texture2D" uid="uid://bbktco5w8o574" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_112.png" id="14_u0u8v"]
-[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00027.png" id="14_xpsvk"]
+[ext_resource type="Texture2D" uid="uid://dv0xg2gy3mnbb" path="res://Assets/Ext_Cockpit/Space/Composition 1_00027.png" id="14_xpsvk"]
 [ext_resource type="Texture2D" uid="uid://rq3vssjs5hnt" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_113.png" id="15_4r4ex"]
-[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00028.png" id="15_r75t5"]
+[ext_resource type="Texture2D" uid="uid://bdcd42kfhaxue" path="res://Assets/Ext_Cockpit/Space/Composition 1_00028.png" id="15_r75t5"]
 [ext_resource type="Texture2D" uid="uid://bfsnumu7ovokn" path="res://Assets/cockpit.png" id="15_tjmfp"]
-[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00029.png" id="16_nr51j"]
+[ext_resource type="Texture2D" uid="uid://c3p77x3jcg2ht" path="res://Assets/Ext_Cockpit/Space/Composition 1_00029.png" id="16_nr51j"]
 [ext_resource type="Texture2D" uid="uid://dxoe8v01wvowe" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_114.png" id="16_w5cfa"]
-[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00030.png" id="17_es17d"]
+[ext_resource type="Texture2D" uid="uid://062tfmiudddt" path="res://Assets/Ext_Cockpit/Space/Composition 1_00030.png" id="17_es17d"]
 [ext_resource type="Texture2D" uid="uid://b6h3ldby8ye6i" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_115.png" id="17_ob0xu"]
 [ext_resource type="Texture2D" uid="uid://c4ys1oasngnef" path="res://Assets/Light/LightError.png" id="17_rk03b"]
 [ext_resource type="Texture2D" uid="uid://dcio18pe76hn" path="res://Assets/Light/Frames/1.png" id="17_xg0gi"]
 [ext_resource type="Texture2D" uid="uid://pbjhmfjph27v" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_116.png" id="18_3s6t2"]
 [ext_resource type="Texture2D" uid="uid://cf5larqg2ts1" path="res://Assets/Light/Frames/2.png" id="18_35ekg"]
-[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00031.png" id="18_wk6p5"]
-[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00032.png" id="19_0t50y"]
+[ext_resource type="Texture2D" uid="uid://cyusle1fn5er6" path="res://Assets/Ext_Cockpit/Space/Composition 1_00031.png" id="18_wk6p5"]
+[ext_resource type="Texture2D" uid="uid://b45xq37oqrnns" path="res://Assets/Ext_Cockpit/Space/Composition 1_00032.png" id="19_0t50y"]
 [ext_resource type="Texture2D" uid="uid://bh8plww38hfa5" path="res://Assets/Light/Frames/3.png" id="19_ne80p"]
 [ext_resource type="Texture2D" uid="uid://bsosgdukktuep" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_117.png" id="19_wepfx"]
 [ext_resource type="Texture2D" uid="uid://dr06hvwcm7jv0" path="res://Assets/Light/Frames/4.png" id="20_468kd"]
-[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00033.png" id="20_mcwme"]
+[ext_resource type="Texture2D" uid="uid://bp0kb506bltx1" path="res://Assets/Ext_Cockpit/Space/Composition 1_00033.png" id="20_mcwme"]
 [ext_resource type="Texture2D" uid="uid://cam5w8pl4loyr" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_118.png" id="20_r0w56"]
 [ext_resource type="Texture2D" uid="uid://cmd3uj8n4qudf" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_119.png" id="21_e24kh"]
 [ext_resource type="Texture2D" uid="uid://c0564dt82fatv" path="res://Assets/Light/Frames/5.png" id="21_ujf8m"]
-[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00034.png" id="21_v3015"]
+[ext_resource type="Texture2D" uid="uid://2h04ghntli8e" path="res://Assets/Ext_Cockpit/Space/Composition 1_00034.png" id="21_v3015"]
 [ext_resource type="Texture2D" uid="uid://iauwrreq7s76" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_120.png" id="22_7cuif"]
-[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00035.png" id="22_wvwtu"]
+[ext_resource type="Texture2D" uid="uid://dm0y1kt7bohj3" path="res://Assets/Ext_Cockpit/Space/Composition 1_00035.png" id="22_wvwtu"]
 [ext_resource type="Texture2D" uid="uid://cjlcrrnbkpgx3" path="res://Assets/Light/Frames/6.png" id="22_xb80o"]
 [ext_resource type="Texture2D" uid="uid://chfm5i1b1ot3c" path="res://Assets/Light/Frames/7.png" id="23_cvfl3"]
 [ext_resource type="Texture2D" uid="uid://c5ii4sali58bc" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_121.png" id="23_m2k5e"]
-[ext_resource type="Texture2D" path="res://Assets/Avion/Composition 1_00036.png" id="23_nq0fk"]
+[ext_resource type="Texture2D" uid="uid://01r3c8pjt4gv" path="res://Assets/Ext_Cockpit/Space/Composition 1_00036.png" id="23_nq0fk"]
 [ext_resource type="Texture2D" uid="uid://olbtwankauf7" path="res://Assets/Ext_Cockpit/Nuages/Composition 1_122.png" id="24_udo4f"]
 [ext_resource type="Texture2D" uid="uid://dbbi4pvnwhamw" path="res://Assets/Light/Frames/8.png" id="24_wjg35"]
 [ext_resource type="Texture2D" uid="uid://2jo8bpssxyff" path="res://Assets/Light/Frames/9.png" id="25_1m1k5"]
@@ -207,7 +207,11 @@
 [ext_resource type="Texture2D" uid="uid://xy0hk0fmabt6" path="res://Assets/MiniJeux/Leviers/Levier1/btn_0 copie.png" id="114_8xqla"]
 [ext_resource type="Texture2D" uid="uid://ck4dbu65s8o1w" path="res://Assets/MiniJeux/Leviers/Levier2/btn_1.png" id="115_anwc2"]
 [ext_resource type="Texture2D" uid="uid://dsbmmy05thrv1" path="res://Assets/MiniJeux/Leviers/Levier2/btn_0 copie.png" id="116_pgyi6"]
+[ext_resource type="Texture2D" uid="uid://chnh37igs8g5a" path="res://Assets/Disco/disco1.png" id="202_wbby1"]
+[ext_resource type="Texture2D" uid="uid://oaltrp5alxp7" path="res://Assets/Disco/disco2.png" id="203_t3lrv"]
+[ext_resource type="Texture2D" uid="uid://bnyugsf8bknr0" path="res://Assets/Disco/disco3.png" id="204_lwvid"]
 [ext_resource type="PackedScene" uid="uid://dexh2ov8nsr7d" path="res://Scenes/Minigame/simon.tscn" id="206_i1the"]
+[ext_resource type="FontFile" uid="uid://d3iepk5e0g4n3" path="res://Assets/Font/OffBitTrial-DotBold.ttf" id="209_ts1or"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_v7p67"]
 animations = [{
@@ -769,6 +773,23 @@ animations = [{
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_74hga"]
 bg_color = Color(0.803922, 0.721569, 0, 1)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_62isa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("202_wbby1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("203_t3lrv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("204_lwvid")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}]
+
 [sub_resource type="LabelSettings" id="LabelSettings_082bn"]
 line_spacing = 35.0
 font = ExtResource("6_8yd1w")
@@ -778,8 +799,9 @@ shadow_size = 0
 
 [sub_resource type="LabelSettings" id="LabelSettings_cqunm"]
 line_spacing = 0.0
-font = ExtResource("6_8yd1w")
+font = ExtResource("209_ts1or")
 font_size = 50
+font_color = Color(0, 1, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_wwci0"]
 font_size = 30
@@ -820,7 +842,6 @@ texture = ExtResource("15_tjmfp")
 
 [node name="Explosion" type="AnimatedSprite2D" parent="."]
 z_index = 20
-position = Vector2(52.6337, 29)
 sprite_frames = SubResource("SpriteFrames_q7wm5")
 animation = &"Explosion"
 centered = false
@@ -1019,6 +1040,24 @@ position = Vector2(1780, 141)
 position = Vector2(495, 691)
 scale = Vector2(1.26, 1.26)
 
+[node name="Ombre" type="DirectionalLight2D" parent="TaskManager"]
+z_index = 15
+position = Vector2(52.6337, 29)
+energy = 0.1
+blend_mode = 1
+
+[node name="BouleDiscoLight" type="DirectionalLight2D" parent="TaskManager"]
+position = Vector2(746, -200)
+energy = 0.0
+
+[node name="BouleDisco" type="AnimatedSprite2D" parent="TaskManager"]
+z_index = 8
+position = Vector2(746, -200)
+scale = Vector2(0.290755, 0.290755)
+sprite_frames = SubResource("SpriteFrames_62isa")
+autoplay = "default"
+frame_progress = 0.880922
+
 [node name="KeyPad" parent="TaskManager" instance=ExtResource("38_udp48")]
 position = Vector2(180, 530)
 scale = Vector2(0.25, 0.25)
@@ -1034,12 +1073,6 @@ vertical_alignment = 1
 autowrap_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
-z_index = 15
-position = Vector2(52.6337, 29)
-energy = 0.1
-blend_mode = 1
-
 [node name="ErrorCounter" parent="." instance=ExtResource("9_i3tvs")]
 z_index = 4
 position = Vector2(1129, 128)
@@ -1052,15 +1085,25 @@ scale = Vector2(0.24, 0.24)
 texture = ExtResource("35_bhaxy")
 flip_h = true
 
-[node name="TimerLabel" type="Label" parent="."]
+[node name="SecondsLabel" type="Label" parent="."]
 z_index = 7
-offset_left = 687.0
-offset_top = 344.0
-offset_right = 838.0
-offset_bottom = 409.0
-text = "11:11"
+offset_left = 776.0
+offset_top = 352.0
+offset_right = 830.0
+offset_bottom = 403.0
+text = "99"
 label_settings = SubResource("LabelSettings_cqunm")
-horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="MinutesLabel" type="Label" parent="."]
+z_index = 7
+offset_left = 697.0
+offset_top = 352.0
+offset_right = 751.0
+offset_bottom = 403.0
+text = "99"
+label_settings = SubResource("LabelSettings_cqunm")
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
 

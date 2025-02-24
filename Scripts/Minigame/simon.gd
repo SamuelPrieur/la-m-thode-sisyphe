@@ -44,13 +44,14 @@ func _ready():
 		
 
 func clignoter_tous_les_boutons():
-	for _i in range(3):  
+	_pattern_en_cours = true
+	for _i in range(4):  
 		for btn in color_buttons:
 			btn.icon = btn.icon_pressed
-		await get_tree().create_timer(0.3).timeout
+		await get_tree().create_timer(0.2).timeout
 		for btn in color_buttons:
 			btn.icon = btn.icon_normal
-		await get_tree().create_timer(0.3).timeout
+		await get_tree().create_timer(0.2).timeout
 	commencer_jeu()
 
 func commencer_jeu():
@@ -96,6 +97,9 @@ func _flash_button(btn_index) -> void:
 func _on_ColorButton_pressed(btn_index):
 	button_click.play()
 	if _pattern_en_cours:
+		return
+
+	if user_index >= pattern.size():
 		return
 
 	if pattern[user_index] == btn_index:

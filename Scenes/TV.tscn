@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://vy7hk335xkle" path="res://Assets/TV/tele.png" id="1_35xx7"]
 [ext_resource type="Script" path="res://Scripts/TV.gd" id="2_s60y6"]
-[ext_resource type="FontFile" uid="uid://bvajmxv1r2504" path="res://Assets/Font/PPMondwest-Regular.otf" id="4_qqmf1"]
+[ext_resource type="FontFile" uid="uid://dq0x0w84fnv0a" path="res://Assets/Font/OffBitTrial-Bold.ttf" id="3_r5u7k"]
 
 [sub_resource type="Gradient" id="Gradient_lrnjd"]
 colors = PackedColorArray(0.129412, 0.368627, 0.494118, 1, 0, 0, 0, 1)
@@ -15,7 +15,8 @@ fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(0.833693, 0.12959)
 
 [sub_resource type="LabelSettings" id="LabelSettings_1mv0w"]
-font = ExtResource("4_qqmf1")
+line_spacing = 10.0
+font = ExtResource("3_r5u7k")
 font_size = 35
 font_color = Color(0, 1, 0, 1)
 shadow_size = 0
@@ -30,7 +31,7 @@ script = ExtResource("2_s60y6")
 position = Vector2(167.104, 184.963)
 scale = Vector2(7.67755, 6.41137)
 color = Color(0.301961, 0.301961, 0.301961, 1)
-energy = 4.0
+energy = 2.5
 texture = SubResource("GradientTexture2D_nooln")
 
 [node name="TaskDescription" type="Label" parent="."]

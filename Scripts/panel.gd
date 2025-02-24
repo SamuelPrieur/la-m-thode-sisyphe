@@ -3,6 +3,8 @@ extends Node2D
 # Label
 @onready var score_label = $ScoreLabel
 @onready var error_label = $ErrorCounter
+@onready var minutes_label = $MinutesLabel 
+@onready var seconds_label = $SecondsLabel  
 @onready var timer_label = $TimerLabel
 @onready var timer = $Timer
 
@@ -45,30 +47,25 @@ var audio_files = [
 
 func _ready():
 	# ----------------------- Préparation de l'audio ----------------------- #
-
 	audio_player_lose = AudioStreamPlayer.new()
 	add_child(audio_player_lose)
 
 	# ----------------------- Sélection un fichier aléatoire ----------------------- #
-
 	var random_audio = audio_files[randi() % audio_files.size()]
 	audio_player_lose.stream = load(random_audio)
 	audio_player_lose.volume_db = -15
 
 	# ----------------------- Opacité de chaque croix ----------------------- #
-	
 	croix1.modulate.a = 0
 	croix2.modulate.a = 0
 	croix3.modulate.a = 0
 	
 	# ----------------------- Liaison avec le TaskManager ----------------------- #
-
 	var task_manager = $TaskManager
 	task_manager.task_completed.connect(_on_task_completed)
 	task_manager.task_failed.connect(_on_task_failed)
 	
 	# ----------------------- Animations et Audio ----------------------- #
-
 	timer.start()  
 	fade_rect.modulate.a = 1
 	animate_fade_in()
@@ -92,9 +89,7 @@ func _ready():
 	audio_player_validate.volume_db = -15
 	audio_player_error.volume_db = -15
 	
-
 # ----------------------- Animation du café ----------------------- #
-
 func start_random_animation_timer():
 	var random_time = randf_range(1, 5)
 	random_anim_timer.start(random_time)
@@ -115,7 +110,11 @@ func _process(delta):
 	var time_left = int(timer.time_left)
 	var minutes = time_left / 60
 	var seconds = time_left % 60
-	timer_label.text = "%02d:%02d" % [minutes, seconds]
+	
+	# Mise à jour des labels pour les minutes et secondes
+	minutes_label.text = "%02d" % minutes
+	seconds_label.text = "%02d" % seconds
+	
 	blink_time += delta
 	match Global.lightState:
 		"Hold":
